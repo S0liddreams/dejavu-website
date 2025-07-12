@@ -23,6 +23,7 @@ export default function ClientFeeds() {
         <p className="xl:text-[20px] text-black font-medium">10k+</p>
         <p className="xl:text-[10px] text-black">Satisfied Clients</p>
       </div>
+     
     </div>
   );
 }

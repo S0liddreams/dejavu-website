@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import ClientFeeds from "../ImageCards/ClientsFeeds";
+import Link from "next/link";
 
 export default function HeroComponent() {
   return (
@@ -12,9 +13,26 @@ export default function HeroComponent() {
           </p>
         </div>
         <div className="xl:w-full xl:h-[132px] xl:mt-[280px] bg-red-100">
-            <div>
-                <ClientFeeds/>
+          <div>
+            <ClientFeeds />
+          </div>
+          <div className="xl:h-[48px] flex justify-between w-full bg-amber-500 mt-[20px]">
+            <div className="">
+              <p className="text-white text-[16px] ">
+                Skip the overwhelm of moving with our trusted concierge
+                services. Professional furniture assembly, home organization,
+                and personalized support that turn your new space into a home
+                from day one
+              </p>
             </div>
+            
+            <div className="w-xl:w-[149px] hl:h-[48px] bg-white">
+
+    
+                <Link href=""></Link>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
