@@ -8,7 +8,7 @@ export default function ClientFeeds() {
   ];
 
   return (
-    <div className="bg-transparent- shadow-md rounded-[100px] px-2 xl:w-[270px] xl:h-[60px] xl:flex items-center ">
+    <div className="bg-transparent- shadow-md rounded-[100px] px-2 lg:w-[270px] lg:h-[60px] lg:flex items-center bg-[#a9a5a539]  ">
       <div className="flex gap-2">
         {imageUrls.map((url, index) => (
           <img
@@ -19,9 +19,9 @@ export default function ClientFeeds() {
           />
         ))}
       </div>
-      <div className="xl:w-[100px]">
-        <p className="xl:text-[20px] text-black font-medium">10k+</p>
-        <p className="xl:text-[10px] text-black">Satisfied Clients</p>
+      <div className="lg:w-[100px] ">
+        <p className="lg:text-[20px] text-white font-medium">10k+</p>
+        <p className="lg:text-[10px] text-white">Satisfied Clients</p>
       </div>
      
     </div>
