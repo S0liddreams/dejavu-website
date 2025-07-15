@@ -1,5 +1,6 @@
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import RecentWorks from "@/components/OurRecentWorks/RecentWorks";
 import Services from "@/components/OurServices/Services";
 import Team from "@/components/Team/Team";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services/>
       <Team/>
       <HowItWorks/>
+      <RecentWorks/>
     </div>
   );
 }
