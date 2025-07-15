@@ -1,4 +1,5 @@
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import Services from "@/components/OurServices/Services";
 
 
 
@@ -6,8 +7,9 @@ import HeroComponent from "@/components/HeroComponent/HeroComponent";
 
 export default function Home() {
   return (
-    <div className="lg:w-full lg:h-[800px] mx-0 min-w-[365px] lg:px-[64px] lg:pb-[64px]  ">
+    <div className="lg:w-full lg:h-[800px] mx-0 min-w-[365px]     ">
       <HeroComponent/>
+      <Services/>
     </div>
   );
 }

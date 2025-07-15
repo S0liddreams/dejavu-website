@@ -20,7 +20,7 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative lg:hidden">
       {/* Header with hamburger button */}
       <div className="flex items-center justify-between p-4  shadow-md">
         <div className="text-xl font-bold text-gray-800"><div>
@@ -61,7 +61,7 @@ const MobileMenu = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`absolute top-full left-0 w-full rounded-[16px] bg-white shadow-lg transform transition-all duration-300 ease-in-out origin-top ${
+        className={`absolute top-full left-0 w-full rounded-[16px]  bg-white shadow-lg transform transition-all duration-300 ease-in-out origin-top ${
           isOpen
             ? "opacity-100 scale-y-100 visible"
             : "opacity-0 scale-y-0 invisible"
