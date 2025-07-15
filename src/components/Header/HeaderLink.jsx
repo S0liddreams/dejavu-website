@@ -12,7 +12,7 @@ export default function HeaderLink() {
   const pathname = usePathname();
 
   return (
-    <nav className="xl:w-[300px] xl:h-[40px] xl:flex xl:items-center xl:rounded-[100px] justify-between xl:gap-6 xl:px-1 bg-[#FFFFFF59] ">
+    <nav className="lg:w-[300px] lg:h-[40px] lg:flex lg:items-center lg:rounded-[100px] justify-between lg:gap-6 lg:px-1 bg-[#FFFFFF59] hidden ">
   {links.map((link) => {
     const isActive = pathname === link.href;
 
@@ -20,12 +20,12 @@ export default function HeaderLink() {
       <Link
         key={link.href}
         href={link.href}
-        className={`text-lg font-medium xl:text-[14px] xl:flex xl:w-[100px] py-1 transition-all hover:bg-white hover:text-[#171717] hover:rounded-full
+        className={`text-lg font-medium lg:text-[14px] lg:flex lg:w-[100px] py-1 transition-all  hover:bg-white  hover:text-[#171717] hover:rounded-full
           ${isActive
             ? "bg-white text-[#171717] rounded-full px-3"
-            : "text-gray-800"
+            : " text-white"
           }
-          xl:justify-center xl:items-center`} 
+          lg:justify-center lg:items-center`} 
       >
         {link.label}
       </Link>

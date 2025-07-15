@@ -1,19 +1,28 @@
-import Image from 'next/image'
-import React from 'react'
-import HeaderLink from './HeaderLink'
+import Image from "next/image";
+import React from "react";
+import HeaderLink from "./HeaderLink";
+import MobileHeader from "./MobileHeader";
 
 const Header = () => {
   return (
-    <div className='xl:w-full  mx-0 flex  items-center '>
-        <div className='w-full  xl:h-[72px] py-[16px] xl:flex xl:justify-between'> 
-            <div><Image src="/images/dvjlogo.svg" alt="Logo" width={93} height={40}  /></div>
-            <div className=' '>
-                <HeaderLink/>
-            </div>
-            
+    <div className="lg:w-full mx-0 lg:flex items-center  ">
+      <div className="w-full lg:h-[72px] py-[16px] lg:flex lg:justify-between">
+        <div>
+          <Image
+            src="/images/dvjlogo.svg"
+            alt="Logo"
+            width={56}
+            height={24}
+            className="w-[56px] h-[24px] lg:w-[93px] lg:h-[40px] hidden lg:block"
+          />
         </div>
+        <div >
+          <HeaderLink className=" " />
+          <MobileHeader />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -8,20 +8,20 @@ export default function ClientFeeds() {
   ];
 
   return (
-    <div className="bg-transparent- shadow-md rounded-[100px] px-2 lg:w-[270px] lg:h-[60px] lg:flex items-center bg-[#a9a5a539]  ">
-      <div className="flex gap-2">
+    <div className="bg-transparent- shadow-md rounded-[100px] px-2 lg:w-[270px] lg:h-[60px] h-[52px] w-[220px] flex items-center bg-[#a9a5a539]  ">
+      <div className="flex gap-2 w-[112px] h-[39px] ">
         {imageUrls.map((url, index) => (
           <img
             key={index}
             src={url}
             alt={`Avatar ${index + 1}`}
-            className="h-[48px] w-[48px] rounded-[100px] mr-[-10%]"
+            className="lg:h-[48px] lg:w-[48px] w-[40px] h-[40px] rounded-[100px] mr-[-25%] lg:mr-[-10%]"
           />
         ))}
       </div>
-      <div className="lg:w-[100px] ">
-        <p className="lg:text-[20px] text-white font-medium">10k+</p>
-        <p className="lg:text-[10px] text-white">Satisfied Clients</p>
+      <div className="lg:w-[100px] w-[76px] h-[39px] ">
+        <p className="text-[15px] text-white font-medium">10k+</p>
+        <p className="text-[10px] text-white">Satisfied Clients</p>
       </div>
      
     </div>
