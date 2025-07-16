@@ -28,12 +28,12 @@ const RecentWorks = () => {
           </p>
         </div>
 
-        <div className="relative h-full lg:h-[524px] flex items-center justify-center ">
+        <div className="relative h-full lg:h-[454px] xl:h-[524px] flex items-center justify-center ">
           <div className="relative z-10 grid grid-cols-1  gap-8 md:grid-cols-2 lg:flex lg:gap-6 xl:gap-10 py-10 max-w-[1440px] mx-auto px-4">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative w-[335px] lg:w-[340px] xl:w-[636px] h-[354px] lg:h-[300px] rounded-3xl overflow-hidden bg-cover bg-center group transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:scale-[1.03] hover:shadow-xl hover:-rotate-1 transform"
+                className="relative w-[335px] lg:w-[340px] xl:w-[530px] h-[354px] lg:h-[300px] rounded-3xl overflow-hidden bg-cover bg-center group transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:scale-[1.03] hover:shadow-xl hover:-rotate-1 transform"
                 style={{ backgroundImage: `url('${service.image}')` }}
               >
                 {/* Gradient Overlay */}
@@ -53,12 +53,15 @@ const RecentWorks = () => {
 
                 {/* Optional border glow on hover */}
                 <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-white/30 transition-all duration-500 pointer-events-none"></div>
+
+                
               </div>
             ))}
           </div>
-        </div>
 
-        <div className="group md:w-[181px] text-[14px]  md:text-[16px] mx-auto bg-[#0550A1] w-[160px] h-[44px] p-[4px] pb-[4px] pl-[12px] lg:h-[48px] lg:py-[12px] lg:pl-[12px] lg:pr-[4px] lg:pb-[12px] rounded-[100px] flex justify-between items-center text-white cursor-pointer">
+          
+        </div>
+ <div className="group md:w-[181px] text-[14px]  md:text-[16px] mx-auto bg-[#0550A1] w-[160px] h-[44px] p-[4px] pb-[4px] pl-[12px] lg:h-[48px] lg:py-[12px] lg:pl-[12px] lg:pr-[4px] lg:pb-[12px] rounded-[100px] flex justify-between items-center text-white cursor-pointer">
           See All Projects
           <Link href="">
             <div className="lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] bg-white rounded-full text-[#0550A1] flex items-center justify-center transition-all duration-300 ease-in-out transform group-hover:scale-125 group-hover:bg-black group-hover:text-white group-hover:shadow-xl">
@@ -66,6 +69,7 @@ const RecentWorks = () => {
             </div>
           </Link>
         </div>
+       
       </div>
     </div>
   );

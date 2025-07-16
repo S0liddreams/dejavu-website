@@ -6,13 +6,13 @@ const Team = () => {
     <div>
       {/**No Stress, No Mess. Just Honest, Helpful Moving Support */}
 
-      <div className=" lg:h-[852px] md:h-[600px] xl:px-[74px]">
+      <div className=" lg:h-[852px] md:h-[600px] lg:px-[74px] p-[20px]">
         <div className="xl:h-[724px] items-center xl:gap-[48px] mt-[40px] lg:mt-0 p-[20px] ">
           <div className="lg:text-[48px] text-[24px] w-[335px] md:w-[400px] lg:w-[746px] md:mx-auto font-semibold mb-[40px]">
             No Stress, No Mess. Just Honest, Helpful Moving Support
           </div>
 
-          <div className=" xl:h-[560px] xl:w-[1168px] grid grid-cols-2 gap-4 lg:mt-[50px]  justify-between mx-auto lg:flex">
+          <div className=" xl:h-[560px]  grid grid-cols-2 gap-4 lg:mt-[50px]  justify-between mx-auto lg:flex">
             {/**Section 1 */}
             <div className=" lg:w-[280px] flex flex-col justify-between  md:p-[12px] lg:py-[50px] ">
               <div className="lg:h-[196px]  flex flex-col justify-between lg:items-center w-full">
