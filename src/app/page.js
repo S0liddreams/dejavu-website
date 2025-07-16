@@ -1,3 +1,4 @@
+import CustomerExperience from "@/components/CustomerExperience/CustomerExperience";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import RecentWorks from "@/components/OurRecentWorks/RecentWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <Team/>
       <HowItWorks/>
       <RecentWorks/>
+      <CustomerExperience/>
     </div>
   );
 }
