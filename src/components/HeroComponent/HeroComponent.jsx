@@ -31,10 +31,15 @@ export default function HeroComponent() {
 
               {/** Contact Us  */}
 
-              <div className="xl:w-[150px] lg:w-[250px] w-[134px] h-[44px] p-[4px] pb-[4px] pl-[12px] lg:h-[48px] lg:py-[12px] lg:pl-[12px] lg:pr-[4px] lg:pb-[12px] rounded-[100px] flex justify-between items-center text-[#171717]  bg-white">Contact Us
-                <Link href=""><div className="bg-[#0550A1] lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] rounded-[200px] text-white items-center flex">
-                  <IoIosArrowRoundForward className="w-[100px] h-[20px]" /></div></Link>
-              </div>
+              <div className="z-50 xl:w-[150px] lg:w-[250px] w-[134px] h-[44px] p-[4px] pl-[12px] lg:h-[48px] lg:pl-[12px] lg:pr-[4px] rounded-[100px] flex justify-between items-center text-[#171717] bg-white shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out group">
+  Contact Us
+  <Link href="">
+    <div className="bg-[#0550A1] lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] rounded-full text-white flex justify-center items-center transition-all duration-300 ease-in-out transform group-hover:scale-110 group-hover:bg-black group-hover:shadow-lg">
+      <IoIosArrowRoundForward className="w-6 h-6" />
+    </div>
+  </Link>
+</div>
+
             </div>
           </div>
         </div>
