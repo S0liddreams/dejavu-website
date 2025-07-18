@@ -17,25 +17,25 @@ const testimonials = [
     text: `They helped me relocate and even helped unpack. Everything was smooth and organized.`,
     name: "Daniel Blake",
     service: "Relocation",
-    image: "/images/customer 1.png",
+    image: "/images/customer 2.jpg",
   },
   {
     text: `My kitchen setup was overwhelming, but Dejavu made it seamless.`,
     name: "Amaka Okafor",
     service: "Kitchen Setup",
-    image: "/images/customer 1.png",
+    image: "/images/customer 3.jpg",
   },
   {
     text: `The team was courteous, clean, and did all the heavy lifting!`,
     name: "Michael Lee",
     service: "Heavy Lifting",
-    image: "/images/customer 1.png",
+    image: "/images/customer 2.jpg",
   },
   {
     text: `They arranged everything in the apartment with aesthetics in mind.`,
     name: "Fatima Yusuf",
     service: "Home Arrangement",
-    image: "/images/customer 1.png",
+    image: "/images/customer 3.jpg",
   },
   {
     text: `Honestly, the easiest move I've ever had. Very professional!`,
@@ -60,7 +60,7 @@ const TestimonialCard = ({ testimonial }) => (
             </p>
           </div>
         </div>
-        <div className="lg:w-[520px] md:w-[400px] items-center lg:h-full flex justify-center">
+        <div className="lg:w-[520px] md:w-[400px]  items-center lg:h-full flex justify-center">
           <Image
             src={testimonial.image}
             alt={testimonial.name}
@@ -71,7 +71,7 @@ const TestimonialCard = ({ testimonial }) => (
           <Image
             src={testimonial.image}
             alt={testimonial.name}
-            className="lg:hidden rounded-[100%]"
+            className="lg:hidden rounded-[100%] w-[80px] h-[80px]"
             width={80}
             height={80}
           />

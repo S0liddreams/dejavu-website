@@ -40,12 +40,12 @@ const Services = () => {
           your move; whether you're settling in, moving out, or starting fresh.
         </p>
       </div>
-      <div className="relative h-full lg:h-[524px]   flex items-center justify-center">
-        <div className="relative z-10 grid grid-cols-1 w-full items-center justify-center   gap-6 md:grid-cols-2 lg:flex  lg:gap-2 xl:gap-8  py-10 max-w-[1440px] mx-auto ">
+      <div className="relative h-full lg:h-[524px]  flex items-center justify-center">
+        <div className="relative z-10 grid grid-cols-1 w-full items-center justify-center     gap-6 md:grid-cols-2 lg:flex  lg:gap-2 xl:gap-8  py-10 max-w-[1440px] mx-auto ">
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-[335px] lg:w-[240px] xl:w-[296px]  h-[354px] bg-cover bg-center rounded-2xl overflow-hidden text-center transform hover:scale-105 transition-transform duration-300 group" // Add 'group' class here
+              className="relative w-[335px] lg:w-[240px] xl:w-[296px] mx-auto h-[354px] bg-cover bg-center rounded-2xl overflow-hidden text-center transform hover:scale-105 transition-transform duration-300 group" // Add 'group' class here
               style={{ backgroundImage: `url('${service.image}')` }}
             >
               {/* Overlay div */}
