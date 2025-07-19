@@ -4,7 +4,7 @@ import CustomerTestimony from "./CustomerTestimony";
 
 const CustomerExperience = () => {
   return (
-    <div className="max-w-[1440px] lg:h-[790px] lg:py-[64px] lg:px-[72px] p-[20px] lg:mt-[60px] mx-auto">
+    <div className="max-w-[1440px]  h-[976px]  md:h-[790px] lg:py-[64px] lg:px-[72px] px-[20px] py-[40px] lg:mt-[60px] mx-auto">
       <div className="lg:h-[662px]  grid  md:flex md:flex-row gap-[20px]  xl:gap-[40px] ">
         <div className=" text-center md:text-left xl:w-[526px] gap-[16px] ">
           <p className="xl:text-[48px] lg:text-[34px] text-[24px] xl:w-[526px] font-medium ">Customer Experiences that Inspires Trust</p>
