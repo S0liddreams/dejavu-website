@@ -47,7 +47,7 @@ export default function FaqDropdown() {
   };
 
   return (
-    <div className="w-full max-w-4xl bg-white rounded-lg  p-6 mx-auto my-8">
+    <div className="w-full max-w-4xl bg-white rounded-lg   mx-auto my-8">
       {faqData.map((faq, index) => (
       
         <div key={index} className="faq-item">
