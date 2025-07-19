@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,11 +18,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link
+          href="https://fonts.cdnfonts.com/css/general-sans"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased font-general-sans">
         {children}
       </body>
     </html>

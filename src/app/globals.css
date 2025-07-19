@@ -1,7 +1,16 @@
 @import "tailwindcss";
+body {
+  font-family: 'General Sans', sans-serif;
+}
 
 .bg-hero-image {
   background-image: url('/images//hero.jpg'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.bg-quest-image {
+  background-image: url('/images//questBackground.jpg'); /* Corrected path */
   background-size: cover; /* Optional: Adjusts image to cover the entire element */
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */

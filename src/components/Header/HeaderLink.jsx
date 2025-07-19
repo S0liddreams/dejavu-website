@@ -12,7 +12,7 @@ export default function HeaderLink() {
   const pathname = usePathname();
 
   return (
-    <nav className="lg:w-[300px] lg:h-[40px] lg:flex lg:items-center lg:rounded-[100px] justify-between lg:gap-6 lg:px-1 bg-[#FFFFFF59] hidden ">
+    <nav className="lg:w-[300px] lg:h-[40px] lg:flex lg:items-center border-1 border-[#FFFFFF59] lg:rounded-[100px] justify-between lg:gap-6 lg:px-1 bg-[#FFFFFF59] hidden ">
   {links.map((link) => {
     const isActive = pathname === link.href;
 
