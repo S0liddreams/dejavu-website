@@ -47,10 +47,10 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial }) => (
   <div className="lg:w-full ">
-    <div className="lg:w-full   lg:min-h-[194px] bg-[#E6EEF6] rounded-[16px] lg:px-[10px] p-[10px] xl:p-[20px]">
-      <div className="lg:h-full  flex flex-row gap-[20px] lg:justify-between lg:items-center">
-        <div className="flex flex-col justify-between gap-[20px] w-[270px] md:w-[800px] lg:w-[900px]">
-          <p className="lg:text-[14px]">{testimonial.text}</p>
+    <div className="lg:w-full   lg:min-h-[194px] bg-[#E6EEF6] rounded-[16px] lg:px-[20px] p-[10px] xl:p-[20px]">
+      <div className="lg:h-full lg:mt-[32px] flex flex-row gap-[10px] justify-between lg:items-center">
+        <div className="flex flex-col justify-between gap-[20px] w-[240px] md:w-[800px] xl:w-[682px]">
+          <p className="lg:text-[14px] lg:w-full xl:w-[510px]  ">{testimonial.text}</p>
           <div className="lg:h-[42px]">
             <p className="lg:text-[16px] font-semibold text-[#171717]">
               {testimonial.name}
@@ -89,7 +89,7 @@ const CustomerTestimony = () => {
   }
 
   return (
-    <div className="lg:h-full lg:w-full min-w-[300px]">
+    <div className=" lg:h-full lg:w-full min-w-[300px]">
       <Swiper
         modules={[Pagination]}
         spaceBetween={30}
@@ -98,7 +98,7 @@ const CustomerTestimony = () => {
       >
         {chunked.map((group, index) => (
           <SwiperSlide key={index}>
-            <div className="space-y-6">
+            <div className="space-y-6 ">
               {group.map((testimonial, idx) => (
                 <TestimonialCard key={idx} testimonial={testimonial} />
               ))}
