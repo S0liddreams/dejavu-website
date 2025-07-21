@@ -7,27 +7,28 @@ import { LuFacebook } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[469px] bg-[#0550A1] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
-      <div className="lg:w-[1296px]  mx-auto">
-        <div className="  h-[268px] lg:flex lg:flex-row justify-between lg:mt-[40px] items-center">
-          <div className=" lg:gap-[26px] grid lg:w-[634px] h-fit">
+    <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1] py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
+      <div className="xl:w-[1296px]  mx-auto ">
+        <div className=" h-[410px] lg:h-[268px] lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
+          <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
             <div>
               <Image
                 src="/images/dvjlogo.svg"
                 alt="alt"
+                className=" lg:w-[130px] lg:h-[72px] xl:w-[168px] md:w-[100px] h-[40px] w-[93px]"
                 width={168}
                 height={72}
               />
             </div>
-            <div className=" flex text-white lg:text-[14px] justify-between">
+            <div className=" lg:flex text-white xl:text-[14px] lg:text-[12px] grid  text-[12px] md:text-[14px] gap-[16px] lg:gap-0   justify-between">
               <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
               <p>dejavu.moveinout@example.com</p>
               <p>(239) 555-0108</p>
             </div>
           </div>
 
-          <div className="lg:w-[246px] lg:h-[119px] flex flex-row justify-between ">
-            <div className=" h-[74px] grid gap-[28px] text-white ">
+          <div className="xl:w-[246px] lg:w-[170px] md:w-[400px] w-[250px] xl:h-[119px] lg:h-[110px] flex flex-row justify-between mt-[40px] ">
+            <div className=" xl:h-[74px] lg:h-[72px] grid gap-[28px] text-white xl:text-[14px] text-[12px] lg:text-[12px] font-medium">
               <p>
                 <Link href="href">About Us</Link>
               </p>
@@ -39,7 +40,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className=" grid text-white h-[70px] gap-[28px]">
+            <div className=" grid text-white h-[70px] gap-[28px] xl:text-[14px] text-[12px] lg:text-[12px]">
               <p>
                 <Link href="href">Privacy Policy</Link>
               </p>
@@ -50,20 +51,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="lg:flex lg:flex-row justify-between text-white lg:h-[54px] border border-t-[#A3A3A3] border-x-0 border-b-0 gap-[32px] items-baseline-last">
-          <div className=" h-[21px] lg:text-[14px] w-[223px] ">
+        <div className="lg:flex lg:flex-row justify-between text-white lg:h-[54px]  border border-t-[#A3A3A3] border-x-0 border-b-0  lg:items-baseline-last">
+          <div className=" lg:h-[21px] lg:text-[14px] text-[12px] items-center mt-[20px] ">
             <p>© 2025 Dejavu. All rights reserved.</p>
           </div>
 
-          <div className="flex flex-row justify-between w-[116px] items-baseline-last h-[20px] mt-[10px]">
+          <div className="flex flex-row justify-between w-[116px]  items-center h-[20px] mt-[20px] lg:mt-[40px]">
             <div>
-              <FaInstagram />
+              <FaInstagram className="text-[16px]" />
             </div>
             <div>
-              <RiTwitterXFill />
+              <RiTwitterXFill className="text-[16px]" />
             </div>
-            <div>
-              <LuFacebook />
+            <div className="border border-white w-[18px] h-[18px] rounded-[25%] p-[1%]">
+              <LuFacebook className="text-[14px]" />
             </div>
           </div>
         </div>
