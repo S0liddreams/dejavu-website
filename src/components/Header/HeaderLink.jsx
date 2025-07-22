@@ -22,7 +22,7 @@ export default function HeaderLink() {
         href={link.href}
         className={`text-lg font-medium lg:text-[14px] lg:flex lg:w-[100px] py-1  transition-all  hover:bg-white  hover:text-[#171717] hover:rounded-full
           ${isActive
-            ? "bg-white text-[#171717] rounded-full px-3"
+            ? "bg-white text-[#171717] rounded-full px-2"
             : " text-white"
           }
           lg:justify-center lg:items-center`} 
