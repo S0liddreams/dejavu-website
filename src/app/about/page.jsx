@@ -80,6 +80,65 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/**OUR STORY */}
+      <div className="h-full lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]  ">
+        <div className="h-[420px] lg:h-[556px] xl:w-[1296px] rounded-[16px] lg:p-[20px] bg-ourstory-image mx-auto"></div>
+        <div className="xl:h-[576px] h-[1057px] md:h-full w-[295px] md:w-[595px]  lg:w-[700px] xl:w-[1076px] rounded-bl-[16px] rounded-br-[16px] lg:gap-[8px] pt-[16px] px-[16px]  lg:p-[24px] bg-[#054993] mx-auto">
+          <div className=" flex flex-col gap-[20px] xl:gap-[16px] h-[610px]  xl:w-[1028px] ">
+            <div>
+              <p className="text-[#FFFFFF] text-[24px] lg:text-[48px] font-medium">
+                Our Story
+              </p>
+            </div>
+            <div className="text-[#FFFFFF] space-y-4  xl:space-y-8">
+              <p className="lg:text-[16px] text-[14px] leading-[150%] text-[#FFFFFF] ">
+                Dejavu Move-In-Out was born out of a simple realization. Moving
+                isn't just about changing locations, it's about rebuilding
+                comfort, routine, and a sense of home. Our founder, once a
+                newcomer navigating the overwhelming chaos of relocation,
+                discovered firsthand how draining and disorganized the process
+                could be. After struggling to unpack boxes alone, assemble
+                furniture with missing tools, and balance the demands of a new
+                job, the idea took root: what if there was a service that didn’t
+                just move your things, but helped you feel moved in?
+              </p>
+              <p>
+                What started as a one-person effort to assist friends and family
+                in 2022, quickly evolved into a full-service concierge brand
+                built to serve a much wider community of busy professionals,
+                students, families, and seniors across Ontario. Today, Dejavu
+                Move-In-Out is more than just a helping hand; it's a trusted
+                partner in transition. With a growing team of vetted experts and
+                a mission rooted in empathy and efficiency, we pride ourselves
+                on offering personalized, reliable services that turn empty
+                rooms into functional, welcoming spaces.
+              </p>
+              <p>
+                We've helped hundreds of clients settle in faster, move out
+                cleaner, and avoid the all-too-familiar stress that comes with
+                relocation. And while every move is different, our promise
+                remains the same: to treat each project like it’s our own home,
+                and to leave every space better than we found it
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/**MEET OUR TEAM */}
+
+      <div className="h-full  lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]m">
+        <div className=" xl:w-[1296px] lg:h-[586px]">
+          <div className="mx-auto w-fit">
+            <p className="text-[#171717] text-center lg:text-[48px] font-medium">Meet Our Team</p>
+            <p className="text-center text-[#525252]">Our team is made up of trained professionals with a passion for service and a commitment to excellence.</p>
+          </div>
+
+        </div>
+
+
+      </div>
     </div>
   );
 };
