@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import WhatWeStandFor from "@/components/WhatWeStandFor/WhatWeStandFor";
 import React from "react";
 
 const About = () => {
@@ -41,7 +42,9 @@ const About = () => {
       <div className="lg:h-[272px] lg:py-[64px] lg:px-[72px] py-[40px] px-[20px] ">
         <div className="xl:w-[1296px] lg:h-[144px] grid lg:grid-cols-2  gap-[16px] mx-auto lg:gap-[8px]">
           <div className=" ">
-            <p className="text-[#171717] font-medium lg:text-[48px] text-[24px]  ">Our Mission</p>
+            <p className="text-[#171717] font-medium lg:text-[48px] text-[24px]  ">
+              Our Mission
+            </p>
           </div>
           <div className="">
             <p className="text-[16px]  text-left text-[#525252]">
@@ -54,6 +57,26 @@ const About = () => {
               busy professionals, families, students, and newcomers across
               Ontario.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/**WHAT WE STAND FOR  */}
+
+      <div className="lg:h-[656px] lg:py-[64px] lg:px-[72px] py-[40px] px-[20px] ">
+        <div className="lg:h-[528px] flex flex-col lg:gap-[48px] gap-[30px] mx-auto">
+          <div className="mx-auto w-fit">
+            <p className=" text-[#171717] lg:text-[48px] text-[24px] text-center font-medium">
+              What We Stand For
+            </p>
+            <p className="text-[#525252] text-[14px] lg:text-[16px] lg:w-[636px] text-center">
+              Our values guide how we serve our clients reflecting who we are,
+              how we work, and the care we bring to every home we touch.
+            </p>
+          </div>
+
+          <div className="">
+            <WhatWeStandFor />
           </div>
         </div>
       </div>
