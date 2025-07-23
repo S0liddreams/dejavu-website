@@ -29,13 +29,16 @@ const About = () => {
 
       <div className="lg:h-[520px] h-full w-full bg-about-image rounded-[16px] lg:mb-[64px] mb-[40px] ">
         <div className="w-full h-full rounded-[16px]">
+          <div className=" w-full h-full bg-[#00000066]  lg:gap-[88px] lg:px-[64px] lg:pb-[64px] rounded-[16px]">
           <div className="lg:px-[64px] px-[16px] text-[30px] flex flex-col lg:h-[448px]  h-[304px]">
+            
             <Header />
 
             <div className="flex-1 flex items-center justify-center">
               <p className="lg:text-[60px] text-white font-medium text-center">
                 About Us
               </p>
+            </div>
             </div>
           </div>
         </div>
@@ -103,6 +106,7 @@ const About = () => {
 
       {/**OUR STORY */}
       <div className="h-full lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]  ">
+        
         <div className="h-[420px] lg:h-[556px] xl:w-[1296px] rounded-[16px] lg:p-[20px] bg-ourstory-image mx-auto"></div>
         <div className="xl:h-[576px] h-[1057px] md:h-full w-[295px] md:w-[595px]  lg:w-[700px] xl:w-[1076px] rounded-bl-[16px] rounded-br-[16px] lg:gap-[8px] pt-[16px] px-[16px]  lg:p-[24px] bg-[#054993] mx-auto">
           <div className=" flex flex-col gap-[20px] xl:gap-[16px] h-[610px]  xl:w-[1028px] ">

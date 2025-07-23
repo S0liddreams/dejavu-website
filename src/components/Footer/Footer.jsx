@@ -30,10 +30,10 @@ const Footer = () => {
           <div className="xl:w-[246px] lg:w-[170px] md:w-[400px] w-[250px] xl:h-[119px] lg:h-[110px] flex flex-row justify-between mt-[40px] ">
             <div className=" xl:h-[74px] lg:h-[72px] grid gap-[28px] text-white xl:text-[14px] text-[12px] lg:text-[12px] font-medium">
               <p>
-                <Link href="href">About Us</Link>
+                <Link href="/about">About Us</Link>
               </p>
               <p>
-                <Link href="href">Contact Us</Link>
+                <Link href="/contactUs">Contact Us</Link>
               </p>
               <p>
                 <Link href="href">Projects</Link>

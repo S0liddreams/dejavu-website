@@ -15,6 +15,7 @@ body {
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
+
 .bg-quest-image {
   background-image: url('/images/questBackground.jpg'); /* Corrected path */
   background-size: cover; /* Optional: Adjusts image to cover the entire element */
@@ -22,9 +23,45 @@ body {
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
 .bg-ourstory-image {
-  background-image: url('/images/ourstory.jpg'); /* Corrected path */
+  background-image: url('/images//ourstory.jpg'); /* Corrected path */
   background-size: cover; /* Optional: Adjusts image to cover the entire element */
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
+.bg-contact-image {
+  background-image: url('/images/contactUsBackground.jpg'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.main-container {
+  width: 100%;
+  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 40px;
+}
 
+@media (min-width: 1024px) {
+  .main-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 64px;
+    gap: 8px; /* Only effective if it's a flex or grid container */
+  }
+}
+.container {
+  width: 100%;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 8px; /* Only effective if it's a flex or grid container */
+  }
+}
