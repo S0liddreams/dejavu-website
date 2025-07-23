@@ -1,6 +1,26 @@
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import WhatWeStandFor from "@/components/WhatWeStandFor/WhatWeStandFor";
+import Image from "next/image";
 import React from "react";
+
+const teamMembers = [
+  {
+    name: "Ralph Edwards",
+    title: "Operations Manager",
+    image: "/images/Team2.jpg",
+  },
+  {
+    name: "Courtney Henry",
+    title: "Operations Manager",
+    image: "/images/Team32.jpg",
+  },
+  {
+    name: "Cameron Williamson",
+    title: "Digital Bookings & Scheduling Assistant",
+    image: "/images/Team3.jpg",
+  },
+];
 
 const About = () => {
   return (
@@ -8,7 +28,7 @@ const About = () => {
       {/**Fist Section Of About page */}
 
       <div className="lg:h-[520px] h-full w-full bg-about-image rounded-[16px] lg:mb-[64px] mb-[40px] ">
-        <div className="w-full h-full bg-[#00000066] rounded-[16px]">
+        <div className="w-full h-full rounded-[16px]">
           <div className="lg:px-[64px] px-[16px] text-[30px] flex flex-col lg:h-[448px]  h-[304px]">
             <Header />
 
@@ -128,17 +148,47 @@ const About = () => {
 
       {/**MEET OUR TEAM */}
 
-      <div className="h-full  lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]m">
-        <div className=" xl:w-[1296px] lg:h-[586px]">
+      <div className="h-[1295px] lg:h-[778px]  lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]  ">
+        <div className=" xl:w-[1296px] lg:h-[586px] flex flex-col justify-between mx-auto  gap-[30px] ">
           <div className="mx-auto w-fit">
-            <p className="text-[#171717] text-center lg:text-[48px] font-medium">Meet Our Team</p>
-            <p className="text-center text-[#525252]">Our team is made up of trained professionals with a passion for service and a commitment to excellence.</p>
+            <p className="text-[#171717] text-center lg:text-[48px] text-[24px] font-medium">
+              Meet Our Team
+            </p>
+            <p className="text-center text-[14px]  text-[#525252]">
+              Our team is made up of trained professionals with a passion for
+              service and a commitment to excellence.
+            </p>
           </div>
 
+          <div className="flex flex-col lg:flex-row gap-4 justify-center">
+            {teamMembers.map((member, index) => {
+              const { name, title, image } = member;
+              return (
+                <div
+                  key={index}
+                  className="relative h-[335px]  lg:w-[280px]  xl:w-[416px] lg:h-[416px] rounded-[16px] overflow-hidden items-center bg-cover bg-center "
+                  style={{ backgroundImage: `url(${image})` }}
+                >
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 rounded-[16px] bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
+
+                  {/* Content */}
+                  <div className="w-full h-full p-[20px] gap-[8px] flex flex-col justify-end relative z-20">
+                    <div className="text-white z-50">
+                      <p className="text-[20px] xl:text-[24px] font-medium">
+                        {name}
+                      </p>
+                      <p className="xl:text-[14px] text-[12px]">{title}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
-
-
       </div>
+
+      <Footer/>
     </div>
   );
 };
