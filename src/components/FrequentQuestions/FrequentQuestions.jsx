@@ -39,7 +39,7 @@ const FrequentQuestions = () => {
 
               <div className="z-50 xl:w-[150px] lg:mt-[20px] lg:w-[150px] w-[134px] h-[44px]  pl-[12px] lg:h-[48px] lg:pl-[12px] lg:pr-[4px] rounded-[100px] flex justify-between items-center text-white font-medium bg-[#0550A1] text-[13px] md:text-[14px] xl:text-[16px] shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out group">
                 Contact Us
-                <Link href="">
+                <Link href="/contactUs">
                   <div className=" bg-white lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] rounded-full text-[#0550A1] flex justify-center items-center transition-all duration-300 ease-in-out transform group-hover:scale-110 group-hover:bg-black group-hover:shadow-lg">
                     <IoIosArrowRoundForward className="w-6 h-6" />
                   </div>
