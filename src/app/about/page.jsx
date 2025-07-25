@@ -158,7 +158,7 @@ const About = () => {
             <p className="text-[#171717] text-center lg:text-[48px] text-[24px] font-medium">
               Meet Our Team
             </p>
-            <p className="text-center text-[14px]  text-[#525252]">
+            <p className="text-center text-[14px] xl:text-[16px] xl:w-[600px]  text-[#525252]">
               Our team is made up of trained professionals with a passion for
               service and a commitment to excellence.
             </p>

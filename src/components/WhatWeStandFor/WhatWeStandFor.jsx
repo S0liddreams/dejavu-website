@@ -44,11 +44,11 @@ const features = [
 
 export default function FeaturesGrid() {
   return (
-    <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
+    <div className="grid gap-6  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
       {features.map((feature, index) => (
         <div
           key={index}
-          className="min-w-[250px]  h-[134px] xl:w-[416px] bg-[#F5F5F5] lg:h-[167px] p-[20px]  rounded-[16px]"
+          className="min-w-[250px]  h-[134px] xl:w-full bg-[#F5F5F5] lg:h-[167px] p-[20px]  rounded-[16px]"
         >
           <div className="flex flex-row justify-between  lg:gap-[16px]">
             <div>

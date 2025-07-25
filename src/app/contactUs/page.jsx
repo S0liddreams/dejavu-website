@@ -1,5 +1,6 @@
 "use client";
 import Breaadcrumbs from "@/components/breadcrumbs/Breaadcrumbs";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import ServiceOptions from "@/components/ServiceOptions/ServiceOptions";
 import Image from "next/image";
@@ -181,7 +182,7 @@ const Contact = () => {
               <div className="lg:h-[75px] pt-[10px] border-t-2 border-[#D4D4D4] text-white">
                 <p className="lg:text-[18px]">Stay connected</p>
 
-                <div className="flex flew-row gap-[8px] items-center ">
+                <div className="flex flew-row gap-[8px] items-center  cursor-pointer ">
                   <div className="rounded-[200px] lg:w-[34px] lg:h-[34px] bg-[#043972]  flex-col items-center flex  gap-[8px]">
                     <FaInstagramSquare className="text-[14px] h-[89px] w-[16px]" />
                   </div>
@@ -200,6 +201,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
