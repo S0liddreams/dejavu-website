@@ -105,7 +105,7 @@ const Contact = () => {
           </div>
 
           <div className="xl:w-[620px] lg:p-[24px] gap-[8px] bg-[#054993] rounded-[16px]">
-            <div className="lg:h-[453px] flex flex-col gap-[12px]">
+            <div className=" flex flex-col gap-[12px]">
               <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
                 <Image
                   src="/images/call.svg"
@@ -166,19 +166,7 @@ const Contact = () => {
                   <p>Mon -Fri (9:00am - 6:00pm)</p>
                 </div>
               </div>
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
-                <Image
-                  src="/images/call.svg"
-                  alt="alt"
-                  width={24}
-                  height={24}
-                />
-
-                <div className="text-white text-[14px]">
-                  <p>Phone</p>
-                  <p>(239) 555-0108</p>
-                </div>
-              </div>
+              
               <div className="lg:h-[75px] pt-[10px] border-t-2 border-[#D4D4D4] text-white">
                 <p className="lg:text-[18px]">Stay connected</p>
 
