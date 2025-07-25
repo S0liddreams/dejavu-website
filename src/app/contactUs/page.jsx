@@ -10,6 +10,13 @@ import { FaInstagram, FaInstagramSquare } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { LuFacebook } from "react-icons/lu";
 import { RiTiktokFill, RiTwitterXFill } from "react-icons/ri";
+import dynamic from "next/dynamic";
+
+
+const MapComponent = dynamic(
+  () => import('../../components/MapComponent/MapComponent').then((mod) => mod.default),
+  { ssr: false }
+);
 
 const Contact = () => {
   return (
@@ -189,6 +196,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+        {/**Map Component */}
+      <div className="container">
+      <h1 className="text-xl font-bold  mb-4">My Map</h1>
+      <MapComponent className="rounded-[16px]"/>
+    </div>
       <Footer/>
     </div>
   );
