@@ -30,7 +30,7 @@ const About = () => {
       <div className="lg:h-[520px] h-full w-full bg-about-image rounded-[16px] lg:mb-[64px] mb-[40px] ">
         <div className="w-full h-full rounded-[16px]">
           <div className=" w-full h-full bg-[#00000066]  lg:gap-[88px] lg:px-[64px] lg:pb-[64px] rounded-[16px]">
-          <div className="lg:px-[64px] px-[16px] text-[30px] flex flex-col lg:h-[448px]  h-[304px]">
+          <div className=" text-[30px] flex flex-col lg:h-[448px]  h-[304px]">
             
             <Header />
 

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,15 +24,17 @@ const MobileMenu = () => {
     <div className="relative lg:hidden">
       {/* Header with hamburger button */}
       <div className="flex items-center justify-between p-4  shadow-md">
-        <div className="text-xl font-bold text-gray-800"><div>
-                  <Image
-                    src="/images/dvjlogo.svg"
-                    alt="Logo"
-                    width={56}
-                    height={24}
-                    className="w-[56px] h-[24px]  lg:hidden"
-                  />
-                </div></div>
+        <div className="text-xl font-bold text-gray-800">
+          <div>
+            <Image
+              src="/images/dvjlogo.svg"
+              alt="Logo"
+              width={56}
+              height={24}
+              className="w-[56px] h-[24px]  lg:hidden"
+            />
+          </div>
+        </div>
 
         {/* Hamburger Button */}
         <button
@@ -61,7 +64,7 @@ const MobileMenu = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`absolute top-full left-0 w-full rounded-[16px]  bg-white shadow-lg transform transition-all duration-300 ease-in-out origin-top ${
+        className={`absolute z-50 top-full left-0 w-full rounded-[16px]  bg-white shadow-lg transform transition-all duration-300 ease-in-out origin-top ${
           isOpen
             ? "opacity-100 scale-y-100 visible"
             : "opacity-0 scale-y-0 invisible"
@@ -69,14 +72,14 @@ const MobileMenu = () => {
       >
         <nav className="py-4">
           {links.map((link, index) => (
-            <a
+            <Link
               key={index}
               href={link.href}
               onClick={closeMenu}
-              className="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 border-b border-gray-100 last:border-b-0"
+              className="block px-6 py-3 text-[14px] text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200 border-b border-gray-100 last:border-b-0"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
@@ -86,12 +89,8 @@ const MobileMenu = () => {
         <div
           className="fixed inset-0  bg-opacity-20 z-10"
           onClick={closeMenu}
-        >
-           
-        </div>
+        ></div>
       )}
-
-      
     </div>
   );
 };
