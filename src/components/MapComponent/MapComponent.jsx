@@ -5,19 +5,22 @@ import 'leaflet/dist/leaflet.css';
 
 export default function MapComponent() {
   return (
-    <div style={{ borderRadius: '16px', overflow: 'hidden' }}>
+    <div className="w-full h-[500px] rounded-[16px] overflow-hidden">
       <MapContainer
-        center={[6.5244, 3.3792]} // Lagos coordinates
+        center={[6.5244, 3.3792]} // Example: Lagos
         zoom={13}
         scrollWheelZoom={true}
-        style={{ height: '500px', width: '100%' }}
+        style={{ height: '100%', width: '100%' }}
+        
       >
         <TileLayer
-          attribution='&copy; OpenStreetMap contributors'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={[6.5244, 3.3792]}>
-          <Popup>You are here! 🚀</Popup>
+          <Popup>
+            A sample marker in Lagos.
+          </Popup>
         </Marker>
       </MapContainer>
     </div>

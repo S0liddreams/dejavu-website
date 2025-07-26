@@ -12,9 +12,11 @@ import { LuFacebook } from "react-icons/lu";
 import { RiTiktokFill, RiTwitterXFill } from "react-icons/ri";
 import dynamic from "next/dynamic";
 
-
 const MapComponent = dynamic(
-  () => import('../../components/MapComponent/MapComponent').then((mod) => mod.default),
+  () =>
+    import("../../components/MapComponent/MapComponent").then(
+      (mod) => mod.default
+    ),
   { ssr: false }
 );
 
@@ -36,173 +38,153 @@ const Contact = () => {
 
       {/** Contact Form */}
 
-      <div className="lg:h-[753px] container lg:gap-[8px] ">
-        <div className="xl:w-[1296px] lg:h-[625px] lg:flex lg:flex-row mx-auto lg:gap-[54px]">
-          <div className="xl:w-[824px] lg:h-[625px] gap-[40px] flex flex-col  ">
+      <div className=" w-full lg:py-[64px] lg:px-[72px] py-[40px] px-[20px] ">
+        <div className=" mx-auto flex flex-col lg:flex-row gap-8">
+          {/* Left Form Side */}
+          <div className="w-full lg:w-2/3 flex flex-col gap-10">
             <div>
-              <p className="lg:text-[48px] text-[#171717] font-medium">
+              <p className="text-[24px] w-[270px] md:w-auto md:text-4xl text-[#171717] font-medium">
                 Need Help? We’re Here For You
               </p>
-              <p className="text-[#525252] lg:text-[16px] ">
+              <p className="text-[#525252] mt-2 text-base md:text-lg">
                 Let us know how we can assist you. Whether it’s a booking
                 inquiry, partnership request, or just a quick question, we’re
                 here to help; one message away.
               </p>
             </div>
 
-            <div className="lg:h-[463px] ">
-              <div className="flex flex-col lg:gap-[24px] lg:h-[24px]">
-                <div className="lg:flex lg:flex-row gap-[24px]">
-                  <div className="xl:w-[400px] w-full  lg:h-[84px] flex-col flex gap-[8px]">
-                    <div>Name</div>
-                    <input
-                      className="lg:h-[56px]  lg:py-[22px] shadow-[10px] lg:px-[20px] border-1 rounded-[12px] border-[#E5E5E5] text-[#737373]"
-                      type="text"
-                    />
-                  </div>
-                  <div className="xl:w-[400px] w-full  lg:h-[84px] flex-col flex gap-[8px]">
-                    <div>Phone number (Optional)</div>
-                    <input
-                      className="lg:h-[56px]  lg:py-[22px] shadow-[10px] lg:px-[20px] border-1 rounded-[12px] border-[#E5E5E5] text-[#737373]"
-                      type="text"
-                    />
-                  </div>
+            {/* Form */}
+            <div className="w-full flex flex-col gap-6">
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="w-full flex flex-col gap-2">
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
+                  />
                 </div>
-                <div className="lg:flex lg:flex-row gap-[24px]">
-                  <div className="xl:w-[400px] w-full lg:h-[84px] flex-col flex gap-[8px]">
-                    <div>Email</div>
-                    <input
-                      className="lg:h-[56px] w-full lg:py-[22px] shadow-[10px] lg:px-[20px] border-1  rounded-[12px] border-[#E5E5E5] text-[#737373]"
-                      type="text"
-                    />
-                  </div>
-                  <div className="xl:w-[400px] w-full  lg:h-[84px] flex-col flex gap-[8px]">
-                    <div>Service</div>
+                <div className="w-full flex flex-col gap-2">
+                  <label>Phone number (Optional)</label>
+                  <input
+                    type="text"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="w-full flex flex-col gap-2">
+                  <label>Email</label>
+                  <input
+                    type="text"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
+                  />
+                </div>
+                <div className="w-full flex flex-col gap-2">
+                  <label>Service</label>
+                  <div className="">
                     <ServiceOptions />
                   </div>
                 </div>
-                <div className="w-full lg:h-[173px] flex-col flex gap-[8px]">
-                  <div>Message</div>
-                  <textarea
-                    className="lg:h-[144px] w-full lg:py-[22px] shadow-[10px] lg:px-[20px] border-1 rounded-[12px] border-[#E5E5E5] text-[#737373]"
-                    type="text"
-                  >
-                    {" "}
-                  </textarea>
-                </div>
+              </div>
+
+              <div className="w-full flex flex-col gap-2">
+                <label>Message</label>
+                <textarea
+                  className="h-36 px-4 py-3 border rounded-lg border-[#E5E5E5] text-[#737373]"
+                  placeholder="Enter your message here"
+                ></textarea>
               </div>
             </div>
 
-            <div className="lg:h-[48px] lg:flex lg:flex-row lg:gap-[40px]">
-              <p className="text-[#737373] text-[14px] lg:w-[611px]">
+            {/* Disclaimer & Button */}
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+              <p className="text-[#737373] text-sm lg:max-w-xl">
                 By clicking “Submit,” you agree to be contacted by our team via
-                phone or text regarding your inquiry. You also accept our
+                phone or text regarding your inquiry. You also accept our{" "}
                 <span className="text-[#171717]">Privacy Policy</span> and{" "}
-                <span className="text-[#171717]">Terms of Use</span> .
+                <span className="text-[#171717]">Terms of Use</span>.
               </p>
-              <div className="z-50 xl:w-[173px] lg:w-[150px] w-[134px] h-[44px] p-[4px] pl-[12px] lg:h-[48px] lg:pl-[12px] lg:pr-[4px] rounded-[100px] flex justify-between items-center text-white font-medium  bg-[#0550A1] text-[13px] md:text-[14px] xl:text-[16px] shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out group">
+
+              <div className="flex items-center gap-2 bg-[#0550A1] text-white rounded-full px-4 py-2 shadow-md hover:shadow-xl transition-all text-sm md:text-base">
                 Send Message
                 <Link href="/contactUs">
-                  <div className=" lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] rounded-full text-white flex justify-center items-center transition-all duration-300 ease-in-out transform group-hover:scale-110 bg-white group-hover:bg-black group-hover:shadow-lg">
-                    <IoIosArrowRoundForward className="w-6 h-6 text-[#0550A1]" />
+                  <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-black transition-all">
+                    <IoIosArrowRoundForward className="text-[#0550A1]" />
                   </div>
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="xl:w-[620px] lg:p-[24px] gap-[8px] bg-[#054993] rounded-[16px]">
-            <div className=" flex flex-col gap-[12px]">
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
+          {/* Right Info Box */}
+          <div className="w-full lg:w-1/3 bg-[#054993] rounded-2xl p-6 lg:p-[10px] xl:p-6 flex flex-col gap-4">
+            {[
+              { icon: "call", label: "Phone", value: "(239) 555-0108" },
+              {
+                icon: "messages-2",
+                label: "SMS/WhatsApp",
+                value: "(239) 555-0108",
+              },
+              {
+                icon: "sms",
+                label: "Email",
+                value: "dejavu.moveinout@example.com",
+              },
+              {
+                icon: "location",
+                label: "Location",
+                value: "2972 Westheimer Rd. Santa, Illinois 85486",
+              },
+              {
+                icon: "clock12",
+                label: "Work Hours",
+                value: "Mon -Fri (9:00am - 6:00pm)",
+              },
+            ].map(({ icon, label, value }, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-4 bg-[#043972] p-4 rounded-xl"
+              >
                 <Image
-                  src="/images/call.svg"
-                  alt="alt"
+                  src={`/images/${icon}.svg`}
+                  alt={label}
                   width={24}
                   height={24}
                 />
-
-                <div className="text-white text-[14px]">
-                  <p>Phone</p>
-                  <p>(239) 555-0108</p>
+                <div className="text-white text-sm">
+                  <p>{label}</p>
+                  <p className="lg:text-[12px] xl:text-[14px]">{value}</p>
                 </div>
               </div>
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
-                <Image
-                  src="/images/messages-2.svg"
-                  alt="alt"
-                  width={24}
-                  height={24}
-                />
+            ))}
 
-                <div className="text-white text-[14px]">
-                  <p>SMS/WhatsApp</p>
-                  <p>(239) 555-0108</p>
+            <div className="border-t border-[#D4D4D4] pt-4 text-white mt-4">
+              <p className="text-base font-medium mb-2">Stay connected</p>
+              <div className="flex gap-2">
+                <div className="w-11 h-11 rounded-full bg-[#043972] flex items-center justify-center">
+                  <FaInstagramSquare className="text-white" />
                 </div>
-              </div>
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
-                <Image src="/images/sms.svg" alt="alt" width={24} height={24} />
-
-                <div className="text-white text-[14px]">
-                  <p>Email</p>
-                  <p>dejavu.moveinout@example.com</p>
+                <div className="w-11 h-11 rounded-full bg-[#043972] flex items-center justify-center">
+                  <RiTwitterXFill className="text-white" />
                 </div>
-              </div>
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
-                <Image
-                  src="/images/location.svg"
-                  alt="alt"
-                  width={24}
-                  height={24}
-                />
-
-                <div className="text-white text-[14px]">
-                  <p>Location</p>
-                  <p>2972 Westheimer Rd. Santa, Illinois 85486 </p>
+                <div className="w-11 h-11 rounded-full bg-[#043972] flex items-center justify-center">
+                  <LuFacebook className="text-white" />
                 </div>
-              </div>
-              <div className="flex flex-row bg-[#043972] lg:h-[81px] rounded-[12px] lg:p-[16px] gap-[16px]">
-                <Image
-                  src="/images/clock12.svg"
-                  alt="alt"
-                  width={24}
-                  height={24}
-                />
-
-                <div className="text-white text-[14px]">
-                  <p>Work Hours</p>
-                  <p>Mon -Fri (9:00am - 6:00pm)</p>
-                </div>
-              </div>
-              
-              <div className="lg:h-[75px] pt-[10px] border-t-2 border-[#D4D4D4] text-white">
-                <p className="lg:text-[18px]">Stay connected</p>
-
-                <div className="flex flew-row gap-[8px] items-center  cursor-pointer ">
-                  <div className="rounded-[200px] lg:w-[34px] lg:h-[34px] bg-[#043972]  flex-col items-center flex  gap-[8px]">
-                    <FaInstagramSquare className="text-[14px] h-[89px] w-[16px]" />
-                  </div>
-                  <div className="rounded-[200px] lg:w-[34px] lg:h-[34px] bg-[#043972]  flex-col items-center flex  gap-[8px]">
-                    <RiTwitterXFill className="text-[14px] h-[89px] w-[16px] " />
-                  </div>
-                  <div className="rounded-[200px] lg:w-[34px] lg:h-[34px] bg-[#043972]  flex-col items-center flex  gap-[8px]">
-                    <LuFacebook className="text-[14px] h-[89px] w-[16px]" />
-                  </div>
-                  <div className="rounded-[200px] lg:w-[34px] lg:h-[34px] bg-[#043972]  flex-col items-center flex  gap-[8px]">
-                    <RiTiktokFill className="text-[14px] h-[89px] w-[16px]" />
-                  </div>
+                <div className="w-11 h-11 rounded-full bg-[#043972] flex items-center justify-center">
+                  <RiTiktokFill className="text-white" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-        {/**Map Component */}
-      <div className="container">
-      <h1 className="text-xl font-bold  mb-4">My Map</h1>
-      <MapComponent className="rounded-[16px]"/>
-    </div>
-      <Footer/>
+
+      {/**Map Component */}
+      <div className="lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]">
+        <MapComponent className="rounded-[16px]" />
+      </div>
+      <Footer />
     </div>
   );
 };
