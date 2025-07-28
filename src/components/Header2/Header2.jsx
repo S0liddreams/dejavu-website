@@ -4,6 +4,7 @@ import React from "react";
 
 import HeaderLink2 from "./HeaderLink2";
 import MobileMenu2 from "./MobileHeader2";
+import Link from "next/link";
 
 const Header2 = () => {
   return (

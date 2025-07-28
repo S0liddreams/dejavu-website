@@ -47,7 +47,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 3 */}
-  <div c>
+  <div>
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       3. Bookings and Payments
     </h1>
