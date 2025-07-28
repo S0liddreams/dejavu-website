@@ -6,19 +6,26 @@ const TermsOfUse = () => {
 
   const menuItems = [
     { id: "acceptance", label: "Acceptance of Terms" },
-    { id: "profile", label: "Profile" },
-    { id: "documents", label: "Documents" },
-    { id: "analytics", label: "Analytics" },
-    { id: "messages", label: "Messages" },
-    { id: "settings", label: "Settings" },
+    { id: "overview", label: "Services Overview" },
+    { id: "bookings", label: "Bookings and Payments" },
+    { id: "cancellations", label: "Cancellations and Rescheduling" },
+    { id: "client", label: "Client Responsibilities" },
+    { id: "liability", label: "Liability and Damages" },
+    { id: "intellectual", label: "Intellectual Property" },
+    { id: "privacy", label: "Privacy" },
+    { id: "amendments", label: "Amendments" },
+    { id: "Contact", label: "Contact Us" },
   ];
 
   const renderPageContent = () => {
     switch (activePage) {
       case "acceptance":
         return (
-          <div className="p-8 flex flex-col lg:gap-[40px]">
-            <p>
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px] leading-[150%] flex flex-col   lg:gap-[56px] gap-[8px] ">
+            
+
+            
+            <p className="leading-[150%]  pb-[24px]">
               By accessing or using our website, services, or booking platform,
               you agree to be bound by the following terms and conditions
               (“Terms of Use”). Please read them carefully before using our
@@ -26,11 +33,11 @@ const TermsOfUse = () => {
               our site or services.
             </p>
 
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
+            <div className=" pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px]  pb-[12px] text-[#171717] font-medium">
                 1. Acceptance of Terms
               </h1>
-              <p>
+              <p className="leading-[150%]">
                 By using this website or any Dejavu Move-In-Out service, you
                 confirm that you are at least 18 years old and legally capable
                 of entering into a binding contract. If you are using our
@@ -38,127 +45,145 @@ const TermsOfUse = () => {
                 agree that you have the authority to bind them to these terms.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+
+            <div className="pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
+                2. Services Overview
               </h1>
-              <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+              <p  className="leading-[150%]">
+                Dejavu Move-In-Out provides move-in concierge services,
+                furniture assembly, move-out support, and related home setup
+                services. All services are subject to availability, geographic
+                coverage, and scope limitations as listed on our website or
+                communicated during the booking process.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className="pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
+                3. Bookings and Payments
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                All service bookings must be made through our official website
+                or approved communication channels. Payments are required to
+                confirm bookings. We reserve the right to cancel or reschedule
+                appointments due to availability or unforeseen circumstances.
+                Customers will be notified promptly in such cases.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className="pb-[24px] ">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
+                4. Cancellations and Rescheduling
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                Clients may cancel or reschedule a service up to 24 hours in
+                advance without penalty. Late cancellations may be subject to a
+                partial service charge. Full cancellation and refund policies
+                are available on the FAQ page or upon request.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className="pb-[24px] ">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                5. Client Responsibilities
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                <h2>Clients are responsible for:</h2>
+                <ul>
+                  <li>. Providing accurate booking information</li>
+                  <li>. Ensuring safe and accessible work environments</li>
+                  <li>
+                    . Notifying us of any building or logistical restrictions in
+                    advance
+                  </li>
+                </ul>
+
+                <p>
+                  Failure to do so may result in delays, additional charges, or
+                  cancellation of service.
+                </p>
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className="pb-[24px] ">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                6. Service Limitations
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                <h2>Our team does not offer services that involve:</h2>
+                <ul>
+                  <li>. Heavy lifting over safety-approved weight limits</li>
+                  <li>. Hazardous material handling</li>
+                  <li>. Complex electrical or plumbing installation</li>
+                </ul>
+
+                <p>
+                  Any request outside the scope of our services must be approved
+                  in writing.
+                </p>
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className="pb-[24px] ">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                7. Liability and Damages
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                <h2>
+                  Dejavu Move-In-Out is insured and takes reasonable care with
+                  all items and property. However, we are not liable for:
+                </h2>
+                <ul>
+                  <li>. Pre-existing damage</li>
+                  <li>. Items improperly packed by the client</li>
+                  <li>
+                    . Damage resulting from unclear or incomplete instructions
+                  </li>
+                </ul>
+
+                <p>
+                  Claims for damage must be submitted in writing within 48 hours
+                  of service completion.
+                </p>
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className=" pb-[24px]">
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                8. Intellectual Property
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                All content on this website—including logos, text, images, and
+                software—is the property of Dejavu Move-In-Out or its licensors
+                and may not be reproduced, distributed, or used without express
+                permission.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className=" pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                9. Privacy
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                Your privacy is important to us. By using our website or
+                services, you consent to the collection and use of information
+                as described in our Privacy Policy.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className=" pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                10. Amendments
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                We may update these Terms of Use at any time. Any changes will
+                be posted on this page, and your continued use of the website or
+                services will constitute your acceptance of the updated terms.
               </p>
             </div>
-            <div>
-              <h1 className="lg:text-[24px] text-[#171717] font-medium">
-                1. Acceptance of Terms
+            <div className=" pb-[24px]">
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                11. Contact Us
               </h1>
               <p>
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
+                If you have any questions about these Terms, please contact us at: hello@dejavumoveinout.ca
               </p>
             </div>
           </div>
+         
         );
 
         return (
@@ -448,35 +473,31 @@ const TermsOfUse = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-50">
-      {/* Sidebar */}
-      <div className="w-64 bg-white shadow-lg">
-        <div className="p-4 ">
-          
-        </div>
-        <nav className="mt-4">
-          {menuItems.map((item) => {
-            const IconComponent = item.icon;
-            return (
-              <button
-                key={item.id}
-                onClick={() => setActivePage(item.id)}
-                className={`w-full flex items-center px-4 py-3 text-left hover:bg-gray-50 transition-colors ${
-                  activePage === item.id
-                    ? "bg-blue-50 border-r-4 border-blue-500 text-blue-700"
-                    : "text-gray-700 hover:text-gray-900"
-                }`}
-              >
-                <span className="font-medium">{item.label}</span>
-              </button>
-            );
-          })}
-        </nav>
-      </div>
+    <div className="flex flex-col lg:flex-row  gap-6 lg:gap-[24px] lg:pt-[2px]  lg:pb-[64px] lg:px-[72px] xl:h-[1843px]">
+  {/* Sidebar */}
+  <div className="w-full lg:w-[320px] px-[20px] lg:px-0 bg-white h-fit lg:sticky lg:top-0 lg:self-start">
+    <div className="p-2"></div>
+    <nav className="mt-4 space-y-2">
+      {menuItems.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => setActivePage(item.id)}
+          className={`w-full flex items-center px-4 py-3 text-left transition-colors rounded-[100px] ${
+            activePage === item.id
+              ? "bg-[#0550A1] text-white"
+              : "text-[#525252] hover:bg-[#E6EEF6] hover:text-gray-900"
+          }`}
+        >
+          <span className="font-medium">{item.label}</span>
+        </button>
+      ))}
+    </nav>
+  </div>
 
-      {/* Main Content */}
-      <div className="flex-1 overflow-auto">{renderPageContent()}</div>
-    </div>
+  {/* Main Content */}
+  <div className="flex-1 w-full lg:justify-between overflow-auto gap-[8px]">{renderPageContent()}</div>
+</div>
+
   );
 };
 

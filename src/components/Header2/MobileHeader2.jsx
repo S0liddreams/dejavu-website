@@ -23,11 +23,11 @@ const MobileMenu2 = () => {
   return (
     <div className="relative lg:hidden">
       {/* Header with hamburger button */}
-      <div className="flex items-center justify-between p-4  shadow-md">
+      <div className="flex items-center justify-between p-4 ">
         <div className="text-xl font-bold text-gray-800">
           <div>
             <Image
-              src="/images/dvjlogo.svg"
+              src="/images/logo2.svg"
               alt="Logo"
               width={56}
               height={24}
@@ -44,17 +44,17 @@ const MobileMenu2 = () => {
         >
           <div className="w-6 h-6 relative">
             <span
-              className={`absolute block w-[24px] h-0.5 bg-gray-200 transform transition-all duration-300 ${
+              className={`absolute block w-[24px] h-0.5 bg-[#171717] transform transition-all duration-300 ${
                 isOpen ? "rotate-45 top-3" : "top-1"
               }`}
             ></span>
             <span
-              className={`absolute block w-full h-0.5 bg-gray-200 transform transition-all duration-300 ${
+              className={`absolute block w-full h-0.5 bg-[#171717] transform transition-all duration-300 ${
                 isOpen ? "opacity-0" : "top-3"
               }`}
             ></span>
             <span
-              className={`absolute block w-full h-0.5 bg-gray-200 transform transition-all duration-300 ${
+              className={`absolute block w-full h-0.5 bg-[#171717] transform transition-all duration-300 ${
                 isOpen ? "-rotate-45 top-3" : "top-5"
               }`}
             ></span>
