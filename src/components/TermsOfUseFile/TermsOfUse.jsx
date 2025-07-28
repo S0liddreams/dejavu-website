@@ -21,13 +21,13 @@ const TermsOfUse = () => {
     switch (activePage) {
       case "acceptance":
         return (
-          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px] leading-[150%] flex flex-col lg:gap-[56px] gap-[8px]">
-  <p className="pb-[24px]">
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[#737373] text-[14px] leading-[150%] flex flex-col lg:gap-[56px] gap-[8px]">
+  <p className="">
     By accessing or using our website, services, or booking platform, you agree to be bound by the following terms and conditions (“Terms of Use”). Please read them carefully before using our services. If you do not agree to these terms, please do not use our site or services.
   </p>
 
   {/* 1 */}
-  <div className="pb-[24px]">
+  <div className="">
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       1. Acceptance of Terms
     </h1>
@@ -47,7 +47,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 3 */}
-  <div className="pb-[24px]">
+  <div c>
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       3. Bookings and Payments
     </h1>
@@ -57,7 +57,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 4 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       4. Cancellations and Rescheduling
     </h1>
@@ -67,11 +67,11 @@ const TermsOfUse = () => {
   </div>
 
   {/* 5 */}
-  <div className="pb-[24px]">
+  <div>
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       5. Client Responsibilities
     </h1>
-    <h2 className="text-[16px] font-semibold mb-2">Clients are responsible for:</h2>
+    <h2 className="text-[16px]  mb-2">Clients are responsible for:</h2>
     <ul className="list-disc list-inside space-y-1">
       <li>Providing accurate booking information</li>
       <li>Ensuring safe and accessible work environments</li>
@@ -83,11 +83,11 @@ const TermsOfUse = () => {
   </div>
 
   {/* 6 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       6. Service Limitations
     </h1>
-    <h2 className="text-[16px] font-semibold mb-2">Our team does not offer services that involve:</h2>
+    <h2 className="text-[16px]  mb-2">Our team does not offer services that involve:</h2>
     <ul className="list-disc list-inside space-y-1">
       <li>Heavy lifting over safety-approved weight limits</li>
       <li>Hazardous material handling</li>
@@ -99,11 +99,11 @@ const TermsOfUse = () => {
   </div>
 
   {/* 7 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       7. Liability and Damages
     </h1>
-    <h2 className="text-[16px] font-semibold mb-2">
+    <h2 className="text-[16px]  mb-2">
       Dejavu Move-In-Out is insured and takes reasonable care with all items and property. However, we are not liable for:
     </h2>
     <ul className="list-disc list-inside space-y-1">
@@ -117,7 +117,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 8 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
       8. Intellectual Property
     </h1>
@@ -127,7 +127,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 9 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       9. Privacy
     </h1>
@@ -137,7 +137,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 10 */}
-  <div className="pb-[24px]">
+  <div >
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       10. Amendments
     </h1>
@@ -147,7 +147,7 @@ const TermsOfUse = () => {
   </div>
 
   {/* 11 */}
-  <div className="pb-[24px]">
+  <div className="">
     <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
       11. Contact Us
     </h1>

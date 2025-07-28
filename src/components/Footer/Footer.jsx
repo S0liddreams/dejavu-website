@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div className=" flex flex-col font-medium text-white h-[70px] gap-[28px] xl:text-[14px] text-[12px] lg:text-[12px]">
               <p>
-                <Link href="href">Privacy Policy</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </p>
               <p>
                 <Link href="/terms">Terms of Use</Link>
