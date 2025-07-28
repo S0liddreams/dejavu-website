@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const TermsOfUse = () => {
-  const [activePage, setActivePage] = useState("home");
+  const [activePage, setActivePage] = useState("acceptance");
 
   const menuItems = [
     { id: "acceptance", label: "Acceptance of Terms" },
@@ -21,168 +21,142 @@ const TermsOfUse = () => {
     switch (activePage) {
       case "acceptance":
         return (
-          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px] leading-[150%] flex flex-col   lg:gap-[56px] gap-[8px] ">
-            
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px] leading-[150%] flex flex-col lg:gap-[56px] gap-[8px]">
+  <p className="pb-[24px]">
+    By accessing or using our website, services, or booking platform, you agree to be bound by the following terms and conditions (“Terms of Use”). Please read them carefully before using our services. If you do not agree to these terms, please do not use our site or services.
+  </p>
 
-            
-            <p className="leading-[150%]  pb-[24px]">
-              By accessing or using our website, services, or booking platform,
-              you agree to be bound by the following terms and conditions
-              (“Terms of Use”). Please read them carefully before using our
-              services. If you do not agree to these terms, please do not use
-              our site or services.
-            </p>
+  {/* 1 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      1. Acceptance of Terms
+    </h1>
+    <p>
+      By using this website or any Dejavu Move-In-Out service, you confirm that you are at least 18 years old and legally capable of entering into a binding contract. If you are using our services on behalf of an organization or another person, you agree that you have the authority to bind them to these terms.
+    </p>
+  </div>
 
-            <div className=" pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px]  pb-[12px] text-[#171717] font-medium">
-                1. Acceptance of Terms
-              </h1>
-              <p className="leading-[150%]">
-                By using this website or any Dejavu Move-In-Out service, you
-                confirm that you are at least 18 years old and legally capable
-                of entering into a binding contract. If you are using our
-                services on behalf of an organization or another person, you
-                agree that you have the authority to bind them to these terms.
-              </p>
-            </div>
+  {/* 2 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      2. Services Overview
+    </h1>
+    <p>
+      Dejavu Move-In-Out provides move-in concierge services, furniture assembly, move-out support, and related home setup services. All services are subject to availability, geographic coverage, and scope limitations as listed on our website or communicated during the booking process.
+    </p>
+  </div>
 
-            <div className="pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
-                2. Services Overview
-              </h1>
-              <p  className="leading-[150%]">
-                Dejavu Move-In-Out provides move-in concierge services,
-                furniture assembly, move-out support, and related home setup
-                services. All services are subject to availability, geographic
-                coverage, and scope limitations as listed on our website or
-                communicated during the booking process.
-              </p>
-            </div>
-            <div className="pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
-                3. Bookings and Payments
-              </h1>
-              <p>
-                All service bookings must be made through our official website
-                or approved communication channels. Payments are required to
-                confirm bookings. We reserve the right to cancel or reschedule
-                appointments due to availability or unforeseen circumstances.
-                Customers will be notified promptly in such cases.
-              </p>
-            </div>
-            <div className="pb-[24px] ">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px]  text-[#171717] font-medium">
-                4. Cancellations and Rescheduling
-              </h1>
-              <p>
-                Clients may cancel or reschedule a service up to 24 hours in
-                advance without penalty. Late cancellations may be subject to a
-                partial service charge. Full cancellation and refund policies
-                are available on the FAQ page or upon request.
-              </p>
-            </div>
-            <div className="pb-[24px] ">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                5. Client Responsibilities
-              </h1>
-              <p>
-                <h2>Clients are responsible for:</h2>
-                <ul>
-                  <li>. Providing accurate booking information</li>
-                  <li>. Ensuring safe and accessible work environments</li>
-                  <li>
-                    . Notifying us of any building or logistical restrictions in
-                    advance
-                  </li>
-                </ul>
+  {/* 3 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      3. Bookings and Payments
+    </h1>
+    <p>
+      All service bookings must be made through our official website or approved communication channels. Payments are required to confirm bookings. We reserve the right to cancel or reschedule appointments due to availability or unforeseen circumstances. Customers will be notified promptly in such cases.
+    </p>
+  </div>
 
-                <p>
-                  Failure to do so may result in delays, additional charges, or
-                  cancellation of service.
-                </p>
-              </p>
-            </div>
-            <div className="pb-[24px] ">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                6. Service Limitations
-              </h1>
-              <p>
-                <h2>Our team does not offer services that involve:</h2>
-                <ul>
-                  <li>. Heavy lifting over safety-approved weight limits</li>
-                  <li>. Hazardous material handling</li>
-                  <li>. Complex electrical or plumbing installation</li>
-                </ul>
+  {/* 4 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      4. Cancellations and Rescheduling
+    </h1>
+    <p>
+      Clients may cancel or reschedule a service up to 24 hours in advance without penalty. Late cancellations may be subject to a partial service charge. Full cancellation and refund policies are available on the FAQ page or upon request.
+    </p>
+  </div>
 
-                <p>
-                  Any request outside the scope of our services must be approved
-                  in writing.
-                </p>
-              </p>
-            </div>
-            <div className="pb-[24px] ">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                7. Liability and Damages
-              </h1>
-              <p>
-                <h2>
-                  Dejavu Move-In-Out is insured and takes reasonable care with
-                  all items and property. However, we are not liable for:
-                </h2>
-                <ul>
-                  <li>. Pre-existing damage</li>
-                  <li>. Items improperly packed by the client</li>
-                  <li>
-                    . Damage resulting from unclear or incomplete instructions
-                  </li>
-                </ul>
+  {/* 5 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      5. Client Responsibilities
+    </h1>
+    <h2 className="text-[16px] font-semibold mb-2">Clients are responsible for:</h2>
+    <ul className="list-disc list-inside space-y-1">
+      <li>Providing accurate booking information</li>
+      <li>Ensuring safe and accessible work environments</li>
+      <li>Notifying us of any building or logistical restrictions in advance</li>
+    </ul>
+    <p className="mt-3">
+      Failure to do so may result in delays, additional charges, or cancellation of service.
+    </p>
+  </div>
 
-                <p>
-                  Claims for damage must be submitted in writing within 48 hours
-                  of service completion.
-                </p>
-              </p>
-            </div>
-            <div className=" pb-[24px]">
-              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
-                8. Intellectual Property
-              </h1>
-              <p>
-                All content on this website—including logos, text, images, and
-                software—is the property of Dejavu Move-In-Out or its licensors
-                and may not be reproduced, distributed, or used without express
-                permission.
-              </p>
-            </div>
-            <div className=" pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                9. Privacy
-              </h1>
-              <p>
-                Your privacy is important to us. By using our website or
-                services, you consent to the collection and use of information
-                as described in our Privacy Policy.
-              </p>
-            </div>
-            <div className=" pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                10. Amendments
-              </h1>
-              <p>
-                We may update these Terms of Use at any time. Any changes will
-                be posted on this page, and your continued use of the website or
-                services will constitute your acceptance of the updated terms.
-              </p>
-            </div>
-            <div className=" pb-[24px]">
-              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                11. Contact Us
-              </h1>
-              <p>
-                If you have any questions about these Terms, please contact us at: hello@dejavumoveinout.ca
-              </p>
-            </div>
-          </div>
+  {/* 6 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      6. Service Limitations
+    </h1>
+    <h2 className="text-[16px] font-semibold mb-2">Our team does not offer services that involve:</h2>
+    <ul className="list-disc list-inside space-y-1">
+      <li>Heavy lifting over safety-approved weight limits</li>
+      <li>Hazardous material handling</li>
+      <li>Complex electrical or plumbing installation</li>
+    </ul>
+    <p className="mt-3">
+      Any request outside the scope of our services must be approved in writing.
+    </p>
+  </div>
+
+  {/* 7 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      7. Liability and Damages
+    </h1>
+    <h2 className="text-[16px] font-semibold mb-2">
+      Dejavu Move-In-Out is insured and takes reasonable care with all items and property. However, we are not liable for:
+    </h2>
+    <ul className="list-disc list-inside space-y-1">
+      <li>Pre-existing damage</li>
+      <li>Items improperly packed by the client</li>
+      <li>Damage resulting from unclear or incomplete instructions</li>
+    </ul>
+    <p className="mt-3">
+      Claims for damage must be submitted in writing within 48 hours of service completion.
+    </p>
+  </div>
+
+  {/* 8 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+      8. Intellectual Property
+    </h1>
+    <p>
+      All content on this website—including logos, text, images, and software—is the property of Dejavu Move-In-Out or its licensors and may not be reproduced, distributed, or used without express permission.
+    </p>
+  </div>
+
+  {/* 9 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      9. Privacy
+    </h1>
+    <p>
+      Your privacy is important to us. By using our website or services, you consent to the collection and use of information as described in our Privacy Policy.
+    </p>
+  </div>
+
+  {/* 10 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      10. Amendments
+    </h1>
+    <p>
+      We may update these Terms of Use at any time. Any changes will be posted on this page, and your continued use of the website or services will constitute your acceptance of the updated terms.
+    </p>
+  </div>
+
+  {/* 11 */}
+  <div className="pb-[24px]">
+    <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+      11. Contact Us
+    </h1>
+    <p>
+      If you have any questions about these Terms, please contact us at: <a href="mailto:hello@dejavumoveinout.ca" className="text-blue-600 underline">hello@dejavumoveinout.ca</a>
+    </p>
+  </div>
+</div>
+
          
         );
 
