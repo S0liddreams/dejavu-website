@@ -12,6 +12,7 @@ const Footer = () => {
         <div className=" h-[410px] lg:h-[268px] lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
           <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
             <div>
+              <Link href="/">
               <Image
                 src="/images/dvjlogo.svg"
                 alt="alt"
@@ -19,6 +20,7 @@ const Footer = () => {
                 width={168}
                 height={72}
               />
+              </Link>
             </div>
             <div className=" lg:flex text-white xl:text-[14px] lg:text-[12px] grid  text-[12px] md:text-[14px] gap-[16px] lg:gap-0   justify-between">
               <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>

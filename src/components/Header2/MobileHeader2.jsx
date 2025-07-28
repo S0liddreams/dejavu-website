@@ -26,6 +26,7 @@ const MobileMenu2 = () => {
       <div className="flex items-center justify-between p-4 ">
         <div className="text-xl font-bold text-gray-800">
           <div>
+            <Link href="/">
             <Image
               src="/images/logo2.svg"
               alt="Logo"
@@ -33,6 +34,7 @@ const MobileMenu2 = () => {
               height={24}
               className="w-[56px] h-[24px]  lg:hidden"
             />
+            </Link>
           </div>
         </div>
 

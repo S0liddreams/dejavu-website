@@ -10,6 +10,7 @@ const Header2 = () => {
     <div className="lg:w-full mx-0 lg:flex items-center  ">
       <div className="w-full lg:h-[72px] py-[16px] lg:flex lg:justify-between">
         <div>
+          <Link href="/">
           <Image
             src="/images/logo2.svg"
             alt="Logo"
@@ -17,6 +18,7 @@ const Header2 = () => {
             height={24}
             className="w-[56px] h-[24px] lg:w-[93px] lg:h-[40px] hidden lg:block"
           />
+          </Link>
         </div>
         <div >
           <HeaderLink2 className=" " />
