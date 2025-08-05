@@ -7,9 +7,9 @@ import { LuFacebook } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1] py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
+    <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1] bg-footer-image  py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
       <div className="xl:w-[1296px]  mx-auto ">
-        <div className=" h-[410px] lg:h-[268px] lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
+        <div className=" h-[410px] lg:h-[268px]  lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
           <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
             <div>
               <Link href="/">

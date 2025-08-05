@@ -46,6 +46,12 @@ body {
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
+.bg-footer-image {
+  background-image: url('/images/Footer\ BG.png'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
 .main-container {
   width: 100%;
   padding: 4px;
