@@ -5,51 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import projectData from "@/data/projectData";
 
-const projectData = [
-  {
-    image: "/images/project1.jpg",
-    title: "Downtown Toronto Condo Unpacked & Ready in a Day",
-    tag: "Move-In Concierge",
-    bgColor: "bg-[#FFEDD5]",
-    textColor: "text-[#EA580C]",
-  },
-  {
-    image: "/images/project2.jpg",
-    title: "Modern IKEA Assembly for a Family Home in Mississauga",
-    tag: "Furniture Assembly",
-    bgColor: "bg-[#FDE2E4]",
-    textColor: "text-[#C1121F]",
-  },
-  {
-    image: "/images/project3.jpg",
-    title: "Curtain Hanging, TV Mounting & Finishing Touches in North York",
-    tag: "Add-ons",
-    bgColor: "bg-[#FAE8FF]",
-    textColor: "text-[#A21CAF]",
-  },
-  {
-    image: "/images/project4.jpg",
-    title: "Full Apartment Setup for Busy Professional in Ottawa",
-    tag: "Move Management",
-    bgColor: "bg-[#FFF3CD]",
-    textColor: "text-[#B7950B]",
-  },
-  {
-    image: "/images/project5.jpg",
-    title: "Quick Move-Out & Clean-Up for a Leased Apartment in Etobicoke",
-    tag: "Move-Out Concierge",
-    bgColor: "bg-[#FEF3C7]",
-    textColor: "text-[#F59E0B]",
-  },
-  {
-    image: "/images/project6.jpg",
-    title: "Student Move-In & Setup at Waterloo University Housing",
-    tag: "Move-In Concierge",
-    bgColor: "bg-[#E6EEF6]",
-    textColor: "text-[#0550A1]",
-  },
-];
+
+
 
 const page = () => {
   return (
@@ -71,20 +30,21 @@ const page = () => {
       </div>
       {/**Projects Section */}
 
-      <div className="xl:h-[1004px] py-[40px] px-[20px]  lg:pt-[64px] lg:px-[72px] lg:pb-[128px] ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] lg:gap-[36px]">
-          {projectData.map((item, index) => (
-            <ProjectCard
-              key={index}
-              image={item.image}
-              title={item.title}
-              tag={item.tag}
-              bgColor={item.bgColor}
-              textColor={item.textColor}
-            />
-          ))}
-        </div>
-      </div>
+      <div className="xl:h-[1004px] py-[40px] px-[20px]  lg:pt-[64px] lg:px-[72px] lg:pb-[128px]">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] lg:gap-[36px]">
+    {projectData.map((item, index) => (
+      <Link key={index} href={`/projects/${item.slug}`}>
+        <ProjectCard
+          image={item.image}
+          title={item.title}
+          tag={item.tag}
+          bgColor={item.bgColor}
+          textColor={item.textColor}
+        />
+      </Link>
+    ))}
+  </div>
+</div>
 
       {/**Need a similar service? */}
       <div className=" bg-similarProjectImg-image rounded-[16px]">
