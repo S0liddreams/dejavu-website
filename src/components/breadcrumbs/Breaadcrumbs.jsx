@@ -3,6 +3,8 @@ import React from 'react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { IoChevronForward } from "react-icons/io5";
+
 export default function Breaadcrumbs() {
   const pathname = usePathname();
 
@@ -27,24 +29,21 @@ export default function Breaadcrumbs() {
 
   return (
     <nav aria-label="Breadcrumb" className="text-sm text-gray-600 mb-4">
-      <ol className="flex items-center space-x-2">
+      <ol className="flex items-center flex-wrap gap-x-2">
         <li>
           <Link href="/" className="text-white hover:underline">
             Home
           </Link>
         </li>
-        {crumbs.length > 0 && <span className='text-white'>/</span>}
         {crumbs.map((crumb, i) => (
-          <li key={i} className="flex items-center space-x-2">
-            {i !== 0 && <span className=''>/</span>}
-            {crumb}
-          </li>
+          <React.Fragment key={i}>
+            <span className="text-white flex-row items-center"><IoChevronForward  className='text-[24px] font-light'/></span>
+            <li className="flex items-center">
+              {crumb}
+            </li>
+          </React.Fragment>
         ))}
       </ol>
     </nav>
   );
 }
-
-
-
-

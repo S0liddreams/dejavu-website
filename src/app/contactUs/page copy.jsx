@@ -5,8 +5,7 @@ import Header from "@/components/Header/Header";
 import ServiceOptions from "@/components/ServiceOptions/ServiceOptions";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
-import axios from 'axios';
+import React from "react";
 import { FaInstagram, FaInstagramSquare } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { LuFacebook } from "react-icons/lu";
@@ -22,74 +21,6 @@ const MapComponent = dynamic(
 );
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleServiceChange = (service) => {
-    setFormData(prev => ({
-      ...prev,
-      service: service
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log('🚀 Form submission started');
-    console.log('📝 Form data:', formData);
-    
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      console.log('📡 Sending request to /api/contact');
-      
-      const response = await axios.post('/api/contact', formData, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-      console.log('✅ Response received:', response);
-      console.log('📦 Response data:', response.data);
-
-      // Axios automatically handles JSON parsing
-      if (response.status === 200) {
-        console.log('🎉 Form submitted successfully!');
-        setSubmitStatus('success');
-        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
-      }
-    } catch (error) {
-      console.error('💥 Form submission error:', error);
-      setSubmitStatus('error');
-      
-      // Handle axios error response
-      if (error.response) {
-        console.error('🔥 Error response status:', error.response.status);
-        console.error('🔥 Error response data:', error.response.data);
-      } else {
-        console.error('🌐 Network error:', error.message);
-      }
-    } finally {
-      setIsSubmitting(false);
-      console.log('🏁 Form submission finished');
-    }
-  };
-
   return (
     <div className="main-container lg:h-[520px] h-[304px] ">
       <div className="lg:h-[448px] h-[260px] bg-contact-image rounded-[16px] ">
@@ -113,111 +44,77 @@ const Contact = () => {
           <div className="w-full lg:w-2/3 flex flex-col gap-10">
             <div>
               <p className="text-[24px] w-[270px] md:w-auto md:text-4xl text-[#171717] font-medium">
-                Need Help? We're Here For You
+                Need Help? We’re Here For You
               </p>
               <p className="text-[#525252] mt-2 text-base md:text-lg">
-                Let us know how we can assist you. Whether it's a booking
-                inquiry, partnership request, or just a quick question, we're
+                Let us know how we can assist you. Whether it’s a booking
+                inquiry, partnership request, or just a quick question, we’re
                 here to help; one message away.
               </p>
             </div>
 
-            {/* Status Messages */}
-            {submitStatus === 'success' && (
-              <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
-              </div>
-            )}
-            {submitStatus === 'error' && (
-              <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                ❌ Sorry, there was an error sending your message. Please try again.
-              </div>
-            )}
-
             {/* Form */}
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6">
+            <div className="w-full flex flex-col gap-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="w-full flex flex-col gap-2">
-                  <label>Name *</label>
+                  <label>Name</label>
                   <input
                     type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373] focus:border-[#0550A1] focus:outline-none"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
                   />
                 </div>
                 <div className="w-full flex flex-col gap-2">
                   <label>Phone number (Optional)</label>
                   <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373] focus:border-[#0550A1] focus:outline-none"
+                    type="text"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
                   />
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="w-full flex flex-col gap-2">
-                  <label>Email *</label>
+                  <label>Email</label>
                   <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373] focus:border-[#0550A1] focus:outline-none"
+                    type="text"
+                    className="h-14 px-4 border rounded-lg border-[#E5E5E5] text-[#737373]"
                   />
                 </div>
                 <div className="w-full flex flex-col gap-2">
                   <label>Service</label>
                   <div className="">
-                    <ServiceOptions 
-                      value={formData.service}
-                      onChange={handleServiceChange}
-                    />
+                    <ServiceOptions />
                   </div>
                 </div>
               </div>
 
               <div className="w-full flex flex-col gap-2">
-                <label>Message *</label>
+                <label>Message</label>
                 <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  className="h-36 px-4 py-3 border rounded-lg border-[#E5E5E5] text-[#737373] focus:border-[#0550A1] focus:outline-none resize-none"
+                  className="h-36 px-4 py-3 border rounded-lg border-[#E5E5E5] text-[#737373]"
                   placeholder="Enter your message here"
                 ></textarea>
               </div>
+            </div>
 
-              {/* Disclaimer & Button */}
-              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
-                <p className="text-[#737373] text-sm lg:max-w-xl">
-                  By clicking "Submit," you agree to be contacted by our team via
-                  phone or text regarding your inquiry. You also accept our{" "}
-                  <span className="text-[#171717]">Privacy Policy</span> and{" "}
-                  <span className="text-[#171717]">Terms of Use</span>.
-                </p>
+            {/* Disclaimer & Button */}
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+              <p className="text-[#737373] text-sm lg:max-w-xl">
+                By clicking “Submit,” you agree to be contacted by our team via
+                phone or text regarding your inquiry. You also accept our{" "}
+                <span className="text-[#171717]">Privacy Policy</span> and{" "}
+                <span className="text-[#171717]">Terms of Use</span>.
+              </p>
 
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={`flex items-center gap-2 bg-[#0550A1] text-white rounded-full px-4 py-2 shadow-md hover:shadow-xl transition-all text-sm md:text-base ${
-                    isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#043d7a]'
-                  }`}
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+              <div className="flex items-center gap-2 bg-[#0550A1] text-white rounded-full px-4 py-2 shadow-md hover:shadow-xl transition-all text-sm md:text-base">
+                Send Message
+                <Link href="/contactUs">
                   <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-black transition-all">
                     <IoIosArrowRoundForward className="text-[#0550A1]" />
                   </div>
-                </button>
+                </Link>
               </div>
-            </form>
+            </div>
           </div>
 
           {/* Right Info Box */}

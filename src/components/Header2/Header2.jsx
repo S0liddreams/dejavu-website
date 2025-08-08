@@ -1,17 +1,19 @@
 import Image from "next/image";
 import React from "react";
-import HeaderLink from "./HeaderLink";
-import MobileHeader from "./MobileHeader";
+
+
+import HeaderLink2 from "./HeaderLink2";
+import MobileMenu2 from "./MobileHeader2";
 import Link from "next/link";
 
-const Header = () => {
+const Header2 = () => {
   return (
     <div className="lg:w-full mx-0 lg:flex items-center  ">
       <div className="w-full lg:h-[72px] py-[16px] lg:flex lg:justify-between">
         <div>
           <Link href="/">
           <Image
-            src="/images/dvjlogo.svg"
+            src="/images/logo2.svg"
             alt="Logo"
             width={56}
             height={24}
@@ -20,12 +22,12 @@ const Header = () => {
           </Link>
         </div>
         <div >
-          <HeaderLink className=" " />
-          <MobileHeader />
+          <HeaderLink2 className=" " />
+          <MobileMenu2 />
         </div>
       </div>
     </div>
   );
 };
 
-export default Header;
+export default Header2;

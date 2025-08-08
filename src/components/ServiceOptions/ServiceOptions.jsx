@@ -8,26 +8,28 @@ export default function ServiceOptions() {
   };
 
   return (
-    <div className="rounded-lg shadow-lg">
-      <div className="xl:w-[400px] w-full flex-col flex gap-[8px]">
-        <div className="relative">
+    <div className="w-full">
+      <div className="flex flex-col gap-2">
+       
+
+        <div className="relative w-full">
           <select
             id="service-select"
-            className="w-full lg:py-[16px] lg:px-[20px] border border-[#E5E5E5] rounded-[12px] text-[#737373] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none"
             value={selectedService}
             onChange={handleServiceChange}
+            className="w-full h-14 px-4 py-3 text-sm text-[#737373] border border-[#E5E5E5] rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
             <option value="" disabled>
               Select a service
             </option>
-            <option value="web_development">Move-In Concierge</option>
-            <option value="mobile_app_development">Move-Out Concierge</option>
-            <option value="ui_ux_design">Furniture Assembly</option>
-            <option value="digital_marketing">Add-ons</option>
+            <option value="move_in">Move-In Concierge</option>
+            <option value="move_out">Move-Out Concierge</option>
+            <option value="assembly">Furniture Assembly</option>
+            <option value="addons">Add-ons</option>
           </select>
 
           {/* Custom dropdown arrow */}
-          <div className="pointer-events-none absolute inset-y-0 right-[20px] flex items-center">
+          <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
             <svg
               className="w-5 h-5 text-gray-400"
               fill="none"
@@ -39,9 +41,6 @@ export default function ServiceOptions() {
             </svg>
           </div>
         </div>
-
-        {/* Display selected service */}
-       
       </div>
     </div>
   );

@@ -34,6 +34,24 @@ body {
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
+.bg-projects-image {
+  background-image: url('/images/projectHeroImg.jpg'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.bg-similarProjectImg-image {
+  background-image: url('/images/similarProjectIMG.jpg'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.bg-footer-image {
+  background-image: url('/images/Footer\ BG.png'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
 .main-container {
   width: 100%;
   padding: 4px;
@@ -47,6 +65,22 @@ body {
     padding-right: 8px;
     padding-top: 8px;
     padding-bottom: 64px;
+    gap: 8px; /* Only effective if it's a flex or grid container */
+  }
+}
+.main-container2 {
+  width: 100%;
+  padding: 4px;
+  padding-top: 4px;
+  
+}
+
+@media (min-width: 1024px) {
+  .main-container2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+   
     gap: 8px; /* Only effective if it's a flex or grid container */
   }
 }

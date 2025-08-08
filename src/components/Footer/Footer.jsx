@@ -7,11 +7,12 @@ import { LuFacebook } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1] py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
+    <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1] bg-footer-image  py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
       <div className="xl:w-[1296px]  mx-auto ">
-        <div className=" h-[410px] lg:h-[268px] lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
+        <div className=" h-[410px] lg:h-[268px]  lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
           <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
             <div>
+              <Link href="/">
               <Image
                 src="/images/dvjlogo.svg"
                 alt="alt"
@@ -19,6 +20,7 @@ const Footer = () => {
                 width={168}
                 height={72}
               />
+              </Link>
             </div>
             <div className=" lg:flex text-white xl:text-[14px] lg:text-[12px] grid  text-[12px] md:text-[14px] gap-[16px] lg:gap-0   justify-between">
               <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
@@ -36,16 +38,16 @@ const Footer = () => {
                 <Link href="/contactUs">Contact Us</Link>
               </p>
               <p>
-                <Link href="href">Projects</Link>
+                <Link href="/projects">Projects</Link>
               </p>
             </div>
 
-            <div className=" grid text-white h-[70px] gap-[28px] xl:text-[14px] text-[12px] lg:text-[12px]">
+            <div className=" flex flex-col font-medium text-white h-[70px] gap-[28px] xl:text-[14px] text-[12px] lg:text-[12px]">
               <p>
-                <Link href="href">Privacy Policy</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </p>
               <p>
-                <Link href="href">Terms of Use</Link>
+                <Link href="/terms">Terms of Use</Link>
               </p>
             </div>
           </div>
