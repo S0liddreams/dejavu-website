@@ -52,6 +52,24 @@ body {
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
+.bg-footerMD-image {
+  background-image: url(''); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.bg-projectpost-image {
+  background-image: url('/images/Background\ Pattern\ &\ Mask.png'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
+.bg-projectpostSm-image {
+  background-image: url('/images/BackgroundSm\ Pattern\ &\ Mask.png'); /* Corrected path */
+  background-size: cover; /* Optional: Adjusts image to cover the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+}
 .main-container {
   width: 100%;
   padding: 4px;

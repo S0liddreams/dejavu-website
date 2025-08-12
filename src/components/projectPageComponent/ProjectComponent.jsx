@@ -20,19 +20,19 @@ export default function ProjectComponent({ project }) {
     <div className="w-full h-full main-container">
       <div className="lg:h-[1001px] h-full lg:pt-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px] lg:pb-[64px] lg:gap-[24px] flex flex-col">
         <Header2 />
-        
 
-        <div className="w-full h-[833px] p-[24px] flex flex-col lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
-            
+        <div className=" relative w-full h-[833px] p-[24px] flex flex-col lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
+          <div className="hidden lg:block absolute  left-0 bg-projectpost-image  h-[80%] transparent w-full"></div>
+          <div className="  lg:hidden absolute top-[-100px]  left-[55px]  bg-projectpostSm-image  h-[70%] transparent w-[250px] md:w-full"></div>
           {/**Hero section */}
-          <div className="lg:h-[737px] h-[757px] gap-[24px] flex flex-col lg:gap-[48px] ">
-            <div className="justify-center flex items-center">
+          <div className="lg:h-[737px] h-[757px] gap-[24px] flex flex-col lg:gap-[48px]  ">
+            <div className="justify-center flex items-center ">
               <p className="lg:w-[836px] lg:text-[48px] text-[24px] w-[287px]  text-[#171717] font-medium text-center ">
                 Downtown Toronto Condo Unpacked & Ready in a Day
               </p>
             </div>
 
-            <div className="lg:h-[480px] h-[640px] gap-[24px] flex flex-col lg:gap-[30px]">
+            <div className="lg:h-[480px] h-[640px] gap-[24px] flex flex-col lg:gap-[30px] z-50">
               <div className="w-full h-full rounded-[16px] object-cover">
                 <Image
                   className="w-full h-[480px] rounded-[16px] object-cover"
@@ -43,7 +43,7 @@ export default function ProjectComponent({ project }) {
                 />
               </div>
 
-              <div className="w-full  flex flex-wrap justify-center lg:justify-between gap-x-[24px] gap-y-[24px] lg:flex-nowrap lg:gap-[48px] lg:h-[53px]">
+              <div className="w-full z-50  flex flex-wrap justify-center lg:justify-between gap-x-[24px] gap-y-[24px] lg:flex-nowrap lg:gap-[48px] lg:h-[53px]">
                 <div className="w-[45%] flex flex-col gap-[8px] items-center text-center lg:w-auto">
                   <p className="text-[#0550A1] font-medium text-[14px] lg:text-[16px]">
                     Service Type
@@ -81,6 +81,7 @@ export default function ProjectComponent({ project }) {
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
       </div>
@@ -176,31 +177,79 @@ export default function ProjectComponent({ project }) {
 
       {/**Executions */}
 
-      <div className="w-full lg:h-[304px] h-[401px] lg:py-[64px] py-[40px] px-[20px] lg:px-[72px] flex flex-col gap-[8px] lg:gap-[8px]">
+      <div className="w-full lg:h-[360px] h-[401px] lg:py-[64px] py-[40px] px-[20px] lg:px-[108px] flex flex-col gap-[8px] lg:gap-[8px]">
         <div className="lg:h-[176px] h-[321px] md:h-[270px] gap-[16px] lg:gap-0   flex-col flex lg:flex-row ">
           <div className=" flex  lg:flex-1/2  ">
             <p className="text-[#171717] lg:text-[36px] text-[20px] font-medium">
-              {project.executions}
+              Executions
             </p>
           </div>
-          <div className="flex flex-1/2 ">
-            <div className="">
-              <p className="lg:w-[645px] lg:text-[16px] text-[14px] text-[#525252]">
-                {project.executions}
-              </p>
+          <div className="flex lg:flex-1/2 items-center ">
+            <div className=" flex flex-col justify-around gap-[12px] ">
+              <div className="flex flex-row gap-[10px] items-center ">
+                <Image
+                  src="/images/executionsBulletsImage.png"
+                  alt="alt"
+                  width={6}
+                  height={24}
+                />
+                <div>
+                  <p className="lg:w-[645px] lg:text-[16px] text-[14px] text-[#525252]">
+                    {project.executions1}
+                  </p>
+                </div>
+              </div>
 
-              <p className="mt-2  lg:text-[16px] text-[14px] text-[#525252]">
-                {project.executions}
-              </p>
-              <p className="mt-2  lg:text-[16px] text-[14px] text-[#525252]">
-                {project.executions}
-              </p>
-              <p className="mt-2  lg:text-[16px] text-[14px] text-[#525252]">
-                {project.executions}
-              </p>
-              <p className="mt-2  lg:text-[16px] text-[14px] text-[#525252]">
-                {project.executions}
-              </p>
+              <div className="flex flex-row gap-[10px] items-center">
+                <Image
+                  src="/images/executionsBulletsImage.png"
+                  alt="alt"
+                  width={6}
+                  height={24}
+                />
+
+                <div>
+                  <p className=" lg:text-[16px] text-[14px] text-[#525252]">
+                    {project.executions2}
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-row gap-[10px] items-center">
+                <Image
+                  src="/images/executionsBulletsImage.png"
+                  alt="alt"
+                  width={6}
+                  height={24}
+                />
+                <div>
+                <p className="  lg:text-[16px] text-[14px] text-[#525252]">
+                  {project.executions3}
+                </p></div>
+              </div>
+              <div className="flex flex-row gap-[10px] items-center">
+                <Image
+                  src="/images/executionsBulletsImage.png"
+                  alt="alt"
+                  width={6}
+                  height={24}
+                />
+                <div>
+                <p className=" lg:text-[16px] text-[14px] text-[#525252]">
+                  {project.executions4}
+                </p></div>
+              </div>
+              <div className="flex flex-row gap-[10px] items-center">
+                <Image
+                  src="/images/executionsBulletsImage.png"
+                  alt="alt"
+                  width={6}
+                  height={24}
+                />
+                <div>
+                <p className=" lg:text-[16px] text-[14px] text-[#525252]">
+                  {project.executions5}
+                </p></div>
+              </div>
             </div>
           </div>
         </div>

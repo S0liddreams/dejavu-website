@@ -7,44 +7,43 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import projectData from "@/data/projectData";
 
-
-
-
 const page = () => {
   return (
     <div className="main-container2 h-full w-full">
-      {/**Hero Section */}
-      <div className="w-full lg:h-[448px] h-[260px]  bg-projects-image rounded-[16px]">
-        <div className=" w-full h-full bg-[#00000066] lg:pb-[88px] flex flex-col px-[16px]  lg:gap-[88px] lg:px-[64px] rounded-[16px]">
-          <Header />
+      <div className="lg:h-[520px] w-full h-[304px]">
+        {/**Hero Section */}
+        <div className="w-full lg:h-[448px] h-[260px]  bg-projects-image rounded-[16px]">
+          <div className=" w-full h-full bg-[#00000066] lg:pb-[88px] flex flex-col px-[16px]  lg:gap-[88px] lg:px-[64px] rounded-[16px]">
+            <Header />
 
-          <div className="text-white h-[200px] px-[28px] gap-[8px] lg:px-0 lg:gap-[16px] flex flex-col text-center items-center">
-            <p className="lg:text-[60px] text-[30px] font-medium">Projects</p>
-            <p className="lg:text-[16px] text-[12px] lg:w-[636px]">
-              From cozy apartments to full-family homes, we’ve helped clients
-              move in, move out, and settle with confidence. Take a look at some
-              of our recent transformations.
-            </p>
+            <div className="text-white h-[200px] px-[28px] gap-[8px] lg:px-0 lg:gap-[16px] flex flex-col text-center items-center">
+              <p className="lg:text-[60px] text-[30px] font-medium">Projects</p>
+              <p className="lg:text-[16px] text-[12px] lg:w-[636px]">
+                From cozy apartments to full-family homes, we’ve helped clients
+                move in, move out, and settle with confidence. Take a look at
+                some of our recent transformations.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       {/**Projects Section */}
 
       <div className="xl:h-[1004px] py-[40px] px-[20px]  lg:pt-[64px] lg:px-[72px] lg:pb-[128px]">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] lg:gap-[36px]">
-    {projectData.map((item, index) => (
-      <Link key={index} href={`/projects/${item.slug}`}>
-        <ProjectCard
-          image={item.image}
-          title={item.title}
-          tag={item.tag}
-          bgColor={item.bgColor}
-          textColor={item.textColor}
-        />
-      </Link>
-    ))}
-  </div>
-</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] lg:gap-[36px]">
+          {projectData.map((item, index) => (
+            <Link key={index} href={`/projects/${item.slug}`}>
+              <ProjectCard
+                image={item.image}
+                title={item.title}
+                tag={item.tag}
+                bgColor={item.bgColor}
+                textColor={item.textColor}
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
 
       {/**Need a similar service? */}
       <div className=" bg-similarProjectImg-image rounded-[16px]">
