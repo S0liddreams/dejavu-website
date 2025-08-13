@@ -63,7 +63,7 @@ const RecentWorks = () => {
         </div>
  <div className="group md:w-[181px] text-[14px]  md:text-[16px] mx-auto bg-[#0550A1] w-[160px] h-[44px] p-[4px] pb-[4px] pl-[12px] lg:h-[48px] lg:py-[12px] lg:pl-[12px] lg:pr-[4px] lg:pb-[12px] rounded-[100px] flex justify-between items-center text-white cursor-pointer">
           See All Projects
-          <Link href="">
+          <Link href="/projects">
             <div className="lg:w-[40px] lg:h-[40px] w-[36px] h-[36px] bg-white rounded-full text-[#0550A1] flex items-center justify-center transition-all duration-300 ease-in-out transform group-hover:scale-125 group-hover:bg-black group-hover:text-white group-hover:shadow-xl">
               <IoIosArrowRoundForward className="w-[20px] h-[20px]" />
             </div>

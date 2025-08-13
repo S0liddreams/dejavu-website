@@ -21,183 +21,172 @@ const PrivacyPolicy = () => {
     switch (activePage) {
       case "acceptance":
         return (
-          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
-            <div className=" ">
-              <p className="pb-[12px]">
-                We are committed to protecting your privacy and ensuring that
-                your personal information is handled safely and responsibly.
-                This Privacy Policy outlines how we collect, use, disclose, and
-                safeguard your information when you visit our website or use our
-                services.
-              </p>
-              <p className="">
-                By accessing our website or engaging with our services, you
-                consent to the practices described in this policy.
-              </p>
-            </div>
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[#737373] text-[14px] leading-[150%] flex flex-col lg:gap-[30px] gap-[8px]">
+            <p className="">
+              By accessing or using our website, services, or booking platform,
+              you agree to be bound by the following terms and conditions
+              (“Terms of Use”). Please read them carefully before using our
+              services. If you do not agree to these terms, please do not use
+              our site or services.
+            </p>
 
             {/* 1 */}
-            <div >
+            <div className="">
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                1. Information We Collect
+                1. Acceptance of Terms
               </h1>
-              <h2 className="text-[16px]  mb-2">
-                We may collect the following types of personal information:
-              </h2>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  Contact Information: Name, email address, phone number, and
-                  physical address
-                </li>
-                <li>
-                  Booking Details: Service preferences, scheduled dates,
-                  locations
-                </li>
-                <li>
-                  Payment Information: Billing details (collected securely via
-                  third-party payment processors)
-                </li>
-                <li>
-                  Technical Information: IP address, browser type, device
-                  information, and cookies
-                </li>
-                <li>
-                  Payment Information: Billing details (collected securely via
-                  third-party payment processors)
-                </li>
-              </ul>
-              <p className="mt-3">
-                We only collect information that is necessary to provide you
-                with our services and improve your experience.
+              <p>
+                By using this website or any Dejavu Move-In-Out service, you
+                confirm that you are at least 18 years old and legally capable
+                of entering into a binding contract. If you are using our
+                services on behalf of an organization or another person, you
+                agree that you have the authority to bind them to these terms.
               </p>
             </div>
 
             {/* 2 */}
-            <div >
+            <div className="pb-[24px]">
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                2. How We Use Your Information
+                2. Services Overview
               </h1>
-              <h2 className="text-[16px]  mb-2">
-                We use your personal information to:
-              </h2>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Schedule and deliver the services you request</li>
-                <li>Process payments and send booking confirmations</li>
-                <li>Respond to inquiries or customer support requests</li>
-                <li>Improve our website functionality and service offerings</li>
-                <li>
-                  Communicate updates, promotions, or changes to services (with
-                  your consent)
-                </li>
-              </ul>
-              <p className="mt-3">
-                We do not sell or rent your personal information to third
-                parties.
+              <p>
+                Dejavu Move-In-Out provides move-in concierge services,
+                furniture assembly, move-out support, and related home setup
+                services. All services are subject to availability, geographic
+                coverage, and scope limitations as listed on our website or
+                communicated during the booking process.
               </p>
             </div>
 
             {/* 3 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                3. How We Share Your Information
+                3. Bookings and Payments
               </h1>
-              <h2 className="text-[16px]  mb-2">
-                We may share your information with:
-              </h2>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  Trusted third-party service providers who help us operate our
-                  business (e.g., payment processors, email platforms)
-                </li>
-                <li>
-                  Law enforcement or government authorities if required by law
-                  or in response to legal requests
-                </li>
-                <li>
-                  Partners or contractors assisting in the delivery of our
-                  services (with confidentiality agreements in place)
-                </li>
-              </ul>
-              <p className="mt-3">
-                All third parties are required to respect the privacy and
-                security of your data.
+              <p>
+                All service bookings must be made through our official website
+                or approved communication channels. Payments are required to
+                confirm bookings. We reserve the right to cancel or reschedule
+                appointments due to availability or unforeseen circumstances.
+                Customers will be notified promptly in such cases.
               </p>
             </div>
 
             {/* 4 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                4. Cookies and Tracking Technologies
+                4. Cancellations and Rescheduling
               </h1>
               <p>
-                We use cookies and similar technologies to enhance your browsing
-                experience, analyze website traffic, and understand how users
-                interact with our content. You can manage your cookie
-                preferences through your browser settings.
+                Clients may cancel or reschedule a service up to 24 hours in
+                advance without penalty. Late cancellations may be subject to a
+                partial service charge. Full cancellation and refund policies
+                are available on the FAQ page or upon request.
               </p>
             </div>
 
             {/* 5 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                5. Data Security
+                5. Client Responsibilities
               </h1>
-              <p>
-                We implement appropriate technical and organizational measures
-                to protect your personal information from unauthorized access,
-                disclosure, alteration, or destruction. While no method of
-                transmission over the internet is 100% secure, we strive to use
-                commercially acceptable means to protect your data.
+              <h2 className="text-[16px]  mb-2">
+                Clients are responsible for:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Providing accurate booking information</li>
+                <li>Ensuring safe and accessible work environments</li>
+                <li>
+                  Notifying us of any building or logistical restrictions in
+                  advance
+                </li>
+              </ul>
+              <p className="mt-3">
+                Failure to do so may result in delays, additional charges, or
+                cancellation of service.
               </p>
             </div>
 
             {/* 6 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                6. Children’s Privacy
+                6. Service Limitations
               </h1>
-              <p>
-                Our services are not intended for individuals under the age of
-                18. We do not knowingly collect or store personal information
-                from children.
+              <h2 className="text-[16px]  mb-2">
+                Our team does not offer services that involve:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Heavy lifting over safety-approved weight limits</li>
+                <li>Hazardous material handling</li>
+                <li>Complex electrical or plumbing installation</li>
+              </ul>
+              <p className="mt-3">
+                Any request outside the scope of our services must be approved
+                in writing.
               </p>
             </div>
 
             {/* 7 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                7. Your Rights and Choices
+                7. Liability and Damages
               </h1>
-              <h2 className="text-[16px] mb-2">
-                Depending on your location, you may have the right to:
+              <h2 className="text-[16px]  mb-2">
+                Dejavu Move-In-Out is insured and takes reasonable care with all
+                items and property. However, we are not liable for:
               </h2>
               <ul className="list-disc list-inside space-y-1">
-                <li>Access or update your personal information</li>
-                <li>Request deletion of your data</li>
-                <li>Withdraw consent for marketing communications</li>
-                <li>Request a copy of the data we hold about you</li>
+                <li>Pre-existing damage</li>
+                <li>Items improperly packed by the client</li>
+                <li>
+                  Damage resulting from unclear or incomplete instructions
+                </li>
               </ul>
               <p className="mt-3">
-                To exercise any of these rights, please contact us using the
-                information below.
+                Claims for damage must be submitted in writing within 48 hours
+                of service completion.
               </p>
             </div>
 
             {/* 8 */}
-            <div >
+            <div>
               <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
-                8. Changes to This Policy
+                8. Intellectual Property
               </h1>
               <p>
-                We may update this Privacy Policy from time to time. All updates
-                will be posted on this page with the revised effective date.
-                Continued use of our website and services constitutes your
-                acceptance of the changes.
+                All content on this website—including logos, text, images, and
+                software—is the property of Dejavu Move-In-Out or its licensors
+                and may not be reproduced, distributed, or used without express
+                permission.
               </p>
             </div>
 
             {/* 9 */}
-            <div >
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                9. Privacy
+              </h1>
+              <p>
+                Your privacy is important to us. By using our website or
+                services, you consent to the collection and use of information
+                as described in our Privacy Policy.
+              </p>
+            </div>
+
+            {/* 10 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                10. Amendments
+              </h1>
+              <p>
+                We may update these Terms of Use at any time. Any changes will
+                be posted on this page, and your continued use of the website or
+                services will constitute your acceptance of the updated terms.
+              </p>
+            </div>
+
+            {/* 11 */}
+            <div className="">
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
                 11. Contact Us
               </h1>
@@ -210,6 +199,310 @@ const PrivacyPolicy = () => {
                 >
                   hello@dejavumoveinout.ca
                 </a>
+              </p>
+            </div>
+          </div>
+        );
+
+      case "Website":
+        return (
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className=" ">
+              <p className="pb-[12px]">
+                <span className="font-bold">DEJAVU </span>(“we,” “our,” or “us”)
+                is committed to safeguarding your privacy in accordance with
+                ISO/IEC 29100, the General Data Protection Regulation (GDPR),
+                and other applicable global privacy laws. This document
+                explains:
+              </p>
+              <p className="">This document explains:</p>
+              <ul className="">
+                <li className="">
+                  How we collect, use, store, and share your personal
+                  information
+                </li>
+                <li className="">
+                  Your rights and choices regarding your information
+                </li>
+                <li className="">
+                  Conditions for using our website and services,
+                  <span className="font-bold">
+                    {" "}
+                    including Move-In Concierge
+                  </span>
+                  ,<span className="font-bold"> Furniture Assembly</span>, and{" "}
+                  <span className="font-bold">Move-Out Concierge </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* 1 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                1. Definitions
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                For the purpose of this Privacy Policy:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <span className="font-bold">Personal Data:</span> Any
+                  information relating to an identified or identifiable natural
+                  person.
+                </li>
+                <li>
+                  <span className="font-bold"> Processing:</span> Any operation
+                  performed on personal data (collection, storage, use, sharing,
+                  etc.).
+                </li>
+                <li>
+                  <span className="font-bold"> Data Subject:</span> The
+                  individual whose personal data is processed.
+                </li>
+                <li>
+                  <span className="font-bold">Controller:</span> The entity
+                  determining the purposes and means of processing personal data
+                  (that’s us).
+                </li>
+                <li>
+                  <span className="font-bold">Processor:</span> A third party
+                  processing data on our behalf.
+                </li>
+                <li>
+                  <span className="font-bold">Cookies:</span> Small files stored
+                  on your device to enhance site functionality.
+                </li>
+              </ul>
+            </div>
+
+            {/* 2 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                2. Information We Collect
+              </h1>
+              <h2 className="text-[16px] font-medium  mb-2">
+                A . Information You Provide
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Full name</li>
+                <li>Contact details (email, phone)</li>
+                <li>Billing and service addresses</li>
+                <li>Payment details (processed securely via third parties)</li>
+                <li>Special service instructions</li>
+              </ul>
+              <h2 className="text-[16px] font-medium  my-4">
+                B. Information Collected Automatically
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>IP address</li>
+                <li>Device and browser information</li>
+                <li>Website usage data (via cookies and analytics tools)</li>
+              </ul>
+              <h2 className="text-[16px] font-medium  my-4">
+                C. Service-Specific Data
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Photographs or floor plans (if voluntarily provided for
+                  service delivery)
+                </li>
+              </ul>
+            </div>
+
+            {/* 3 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                3. Lawful Basis for Processing
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We process personal data only when one of the following applies:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <span className="font-bold">Consent</span> – You have given
+                  explicit permission.
+                </li>
+                <li>
+                  <span className="font-bold"> Contract </span>– Processing is
+                  necessary for service delivery.
+                </li>
+                <li>
+                  <span className="font-bold">Legal Obligation</span> – Required
+                  by applicable laws.
+                </li>
+                <li>
+                  <span className="font-bold">Legitimate Interest</span> –
+                  Necessary for operational purposes (balanced against your
+                  rights).
+                </li>
+              </ul>
+            </div>
+
+            {/* 4 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                4. How We Use Your Data
+              </h1>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>To deliver and manage your requested services</li>
+                <li>To communicate updates, confirmations, and changes</li>
+                <li>To process secure payments</li>
+                <li>To improve our services and website experience</li>
+                <li>To send marketing (only with your consent)</li>
+              </ul>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                5. Data Sharing and Disclosure
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We do not sell personal data. We may share information with:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Authorized service providers (bound by confidentiality
+                  agreements)
+                </li>
+                <li>Payment processors</li>
+                <li>Legal authorities when required</li>
+              </ul>
+            </div>
+
+            {/* 6 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                6. Data Retention
+              </h1>
+              <p>
+                We retain personal data only for as long as necessary to fulfill
+                the purposes stated or to comply with legal obligations. Data is
+                securely deleted or anonymized after this period.
+              </p>
+            </div>
+
+            {/* 7 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                7. Data Security
+              </h1>
+              <p className="text-[16px] mb-2">
+                We use technical and organizational measures to protect personal
+                data, including encryption, secure storage, and restricted
+                access.
+              </p>
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                8. Your Rights (under GDPR, CCPA, and other applicable laws)
+              </h1>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <span className="font-medium">Right of Access</span> – Obtain
+                  a copy of your personal data
+                </li>
+                <li>
+                  <span className="font-medium">Right to Rectification</span> –
+                  Correct inaccurate or incomplete data
+                </li>
+                <li>
+                  <span className="font-medium">Right to Erasure</span> –
+                  Request deletion of your data
+                </li>
+                <li>
+                  <span className="font-medium">
+                    Right to Restrict Processing
+                  </span>{" "}
+                  – Limit how we process your data
+                </li>
+                <li>
+                  <span className="font-medium">Right to Data Portability</span>{" "}
+                  – Receive your data in a structured, machine-readable format
+                </li>
+                <li>
+                  <span className="font-medium">Right to Object</span> – Stop
+                  certain types of processing, including marketing
+                </li>
+                <li>
+                  <span className="font-medium">
+                    Right to Withdraw Consent{" "}
+                  </span>{" "}
+                  – At any time without affecting prior processing
+                </li>
+              </ul>
+            </div>
+
+            {/* 9 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                9. Cookies and Tracking Technologies
+              </h1>
+              <h2 className="text-[16px]  mb-2">We use cookies to:</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Enable website functionality</li>
+                <li>Analyze site usage</li>
+                <li>Improve user experience</li>
+              </ul>
+              <p className="my-2">
+                You can control cookies via browser settings, but some features
+                may be limited.
+              </p>
+            </div>
+            {/* 10 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                10. Use of Website
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                By accessing and using our website, you agree to:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Use it only for lawful purposes</li>
+                <li>Not interfere with site security or functionality</li>
+                <li>Not engage in unauthorized data collection or scraping</li>
+                <li>Respect our intellectual property rights</li>
+                <li>Avoid transmitting spam, malware, or harmful content</li>
+              </ul>
+              <p className="my-2">
+                Violation of these terms may result in restricted or terminated
+                access.
+              </p>
+            </div>
+            {/* 11 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                11. Third-Party Links
+              </h1>
+
+              <p className="my-2">
+                Our site may contain links to third-party websites. We are not
+                responsible for their privacy practices or content.
+              </p>
+            </div>
+            {/* 12 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                12. Children’s Privacy
+              </h1>
+
+              <p className="my-2">
+                Our services are not intended for individuals under 18 years
+                old, and we do not knowingly collect data from minors.
+              </p>
+            </div>
+            {/* 13 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                13. Changes to This Policy
+              </h1>
+
+              <p className="my-2">
+                We may update this document periodically. The “Last Updated”
+                date will be revised accordingly.
               </p>
             </div>
           </div>
@@ -359,7 +652,7 @@ const PrivacyPolicy = () => {
             </div>
           </div>
         );
-      case "messages":
+
         return (
           <div className="p-8">
             <h1 className="text-3xl font-bold text-gray-800 mb-6">Messages</h1>
@@ -425,6 +718,466 @@ const PrivacyPolicy = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        );
+
+      case "property":
+
+      case "content":
+        return (
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className=" ">
+              <p className="pb-[12px]">
+                <span className="font-bold">DEJAVU </span>(“we,” “our,” or “us”)
+                values and respects all content submitted by our users. This
+                <span className="font-bold">
+                  User Content Privacy Policy
+                </span>{" "}
+                explains how we collect, use, store, and protect user-generated
+                content (UGC) submitted through our website, booking systems, or
+                any other communication channels.
+              </p>
+              <p className="">
+                By submitting content to us, you agree to the terms outlined in
+                this policy.
+              </p>
+            </div>
+
+            {/* 1 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                1. Definition of User Content
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                For this policy, “User Content” refers to any materials, data,
+                or information provided to us by you, including but not limited
+                to:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Text (e.g., reviews, comments, messages)</li>
+                <li>
+                  Images, photos, or videos (e.g., property layouts, furniture
+                  photos)
+                </li>
+                <li>Service instructions or preferences</li>
+                <li>
+                  Documents or files uploaded during booking or communication
+                </li>
+                <li>Feedback and testimonials</li>
+              </ul>
+            </div>
+
+            {/* 2 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                2. Ownership of User Content
+              </h1>
+
+              <ul className="list-disc list-outside space-y-1">
+                <li>
+                  You retain ownership of any content you create and submit.
+                </li>
+                <li>
+                  By submitting content, you grant <span className="font-bold"> DEJAVU </span> a
+                  non-exclusive, royalty-free, worldwide license to use, store,
+                  reproduce, and display your content solely for:
+                  <ol className="list-decimal list-inside space-y-1">
+                    <li className="">Providing and improving our services</li>
+                    <li className="">Marketing or promotional purposes (only with your explicit consent)</li>
+                  </ol>
+
+                </li>
+                <li>
+                  We will <span className="font-bold"> not </span> sell your content or use it for unrelated purposes without your consent.
+                </li>
+              </ul>
+            </div>
+
+            {/* 3 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                3. Confidentiality of Proprietary Information
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We may collect and handle IP-related data, such as:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Project specifications</li>
+                <li>Confidential designs</li>
+                <li>Custom service layouts</li>
+                <li>Internal operational methods</li>
+              </ul>
+              <h2 className="text-[16px]  my-2">We commit to:</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Storing such information securely</li>
+                <li>
+                  Using it solely for the purpose of providing agreed services
+                </li>
+                <li>Restricting access to authorized personnel only</li>
+                <li>
+                  Not disclosing it to third parties without prior written
+                  consent
+                </li>
+              </ul>
+            </div>
+
+            {/* 4 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                4. Use of Our Intellectual Property
+              </h1>
+              <h2>You may not:</h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Copy, reproduce, or distribute our materials without prior
+                  written consent
+                </li>
+                <li>
+                  Use our trademarks, service names, or logos without
+                  authorization
+                </li>
+                <li>
+                  Modify or adapt our original works for commercial use without
+                  permission
+                </li>
+              </ul>
+
+              <p className="mt-2">
+                Limited use of our materials is permitted for personal,
+                non-commercial purposes, provided that credit is given and
+                copyright notices remain intact.
+              </p>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                5. Protection Measures
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We implement the following measures to safeguard IP-related
+                data:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <span className="font-bold">Access Control </span> – Only
+                  authorized staff have access to sensitive files
+                </li>
+                <li>
+                  <span className="font-bold">Encryption </span>– Secure
+                  transmission and storage of digital assets
+                </li>
+                <li>
+                  <span className="font-bold">
+                    Non-Disclosure Agreements (NDAs){" "}
+                  </span>
+                  – Required for contractors and partners handling sensitive IP
+                </li>
+                <li>
+                  <span className="font-bold">Monitoring & Enforcement </span>–
+                  Actively monitoring for unauthorized use and enforcing our
+                  rights
+                </li>
+              </ul>
+            </div>
+
+            {/* 6 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                6. Reporting IP Infringement
+              </h1>
+              <h2 className="mb-2">
+                If you believe your IP has been used on our website or in our
+                services without authorization, please contact us at
+                dejavu.moveinout@example.com with:
+              </h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">Description of the IP work in question</li>
+                <li className="">Proof of ownership</li>
+                <li className="">Details of the alleged infringement</li>
+              </ul>
+
+              <p className="mt-2">
+                We will investigate promptly and take necessary action, which
+                may include removing the infringing material or contacting the
+                responsible party.
+              </p>
+            </div>
+
+            {/* 7 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                7. Legal Compliance
+              </h1>
+              <p className="text-[16px] mb-2">
+                We comply with applicable IP laws in all jurisdictions where we
+                operate, including but not limited to:
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">
+                  <span className="font-bold">Copyright Acts</span> of relevant
+                  countries
+                </li>
+                <li className="">
+                  <span className="font-bold">Trademark Acts </span> of relevant
+                  countries
+                </li>
+                <li className="">
+                  <span className="font-bold">
+                    Digital Millennium Copyright Act (DMCA)
+                  </span>{" "}
+                  for U.S.-related services
+                </li>
+                <li className="">
+                  <span className="font-bold">WIPO treaties</span> for
+                  cross-border IP protection
+                </li>
+              </ul>
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                8. Changes to This Policy
+              </h1>
+              <p>
+                We may update this policy from time to time. Any changes will be
+                posted on our website with the updated “Last Updated” date.
+              </p>
+            </div>
+          </div>
+        );
+        return (
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className=" ">
+              <p className="pb-[12px]">
+                <span className="font-bold">DEJAVU </span>(“we,” “our,” or “us”)
+                values and protects intellectual property (IP) in accordance
+                with international standards, including the{" "}
+                <span className="font-bold">
+                  {" "}
+                  World Intellectual Property Organization (WIPO)
+                </span>{" "}
+                framework, applicable copyright, trademark, and patent laws, and
+                relevant information security standards (ISO/IEC 27001).
+              </p>
+              <p className="">
+                This Intellectual Property Privacy Policy outlines how we
+                protect our own IP and respect the IP rights of others,
+                including the confidentiality of proprietary information and
+                creative content.
+              </p>
+            </div>
+
+            {/* 1 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                1. Scope
+              </h1>
+              <h2 className="text-[16px]  mb-2">This policy applies to:</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  All materials created, published, or distributed by us,
+                  including{" "}
+                  <span className="font-bold">
+                    text, graphics, images, designs, branding, service concepts,
+                    and software.
+                  </span>
+                </li>
+                <li>
+                  All proprietary information shared with us by clients,
+                  contractors, or partners during the provision of services such
+                  as{" "}
+                  <span className="font-bold">
+                    {" "}
+                    Move-In Concierge, Furniture Assembly, and Move-Out
+                    Concierge.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* 2 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                2. Ownership of Intellectual Property
+              </h1>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  All content on our website, marketing materials, service
+                  descriptions, processes, and branding elements are the sole
+                  property of <span className="font-bold"> DEJAVU</span> unless
+                  otherwise stated.
+                </li>
+                <li>
+                  Any IP developed by us during service provision remains our
+                  property unless a written agreement assigns ownership to a
+                  client.
+                </li>
+                <li>
+                  Client-provided materials (e.g., logos, designs, floor plans)
+                  remain the property of the client.
+                </li>
+              </ul>
+            </div>
+
+            {/* 3 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                3. Confidentiality of Proprietary Information
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We may collect and handle IP-related data, such as:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Project specifications</li>
+                <li>Confidential designs</li>
+                <li>Custom service layouts</li>
+                <li>Internal operational methods</li>
+              </ul>
+              <h2 className="text-[16px]  my-2">We commit to:</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Storing such information securely</li>
+                <li>
+                  Using it solely for the purpose of providing agreed services
+                </li>
+                <li>Restricting access to authorized personnel only</li>
+                <li>
+                  Not disclosing it to third parties without prior written
+                  consent
+                </li>
+              </ul>
+            </div>
+
+            {/* 4 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                4. Use of Our Intellectual Property
+              </h1>
+              <h2>You may not:</h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Copy, reproduce, or distribute our materials without prior
+                  written consent
+                </li>
+                <li>
+                  Use our trademarks, service names, or logos without
+                  authorization
+                </li>
+                <li>
+                  Modify or adapt our original works for commercial use without
+                  permission
+                </li>
+              </ul>
+
+              <p className="mt-2">
+                Limited use of our materials is permitted for personal,
+                non-commercial purposes, provided that credit is given and
+                copyright notices remain intact.
+              </p>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                5. Protection Measures
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We implement the following measures to safeguard IP-related
+                data:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <span className="font-bold">Access Control </span> – Only
+                  authorized staff have access to sensitive files
+                </li>
+                <li>
+                  <span className="font-bold">Encryption </span>– Secure
+                  transmission and storage of digital assets
+                </li>
+                <li>
+                  <span className="font-bold">
+                    Non-Disclosure Agreements (NDAs){" "}
+                  </span>
+                  – Required for contractors and partners handling sensitive IP
+                </li>
+                <li>
+                  <span className="font-bold">Monitoring & Enforcement </span>–
+                  Actively monitoring for unauthorized use and enforcing our
+                  rights
+                </li>
+              </ul>
+            </div>
+
+            {/* 6 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                6. Reporting IP Infringement
+              </h1>
+              <h2 className="mb-2">
+                If you believe your IP has been used on our website or in our
+                services without authorization, please contact us at
+                dejavu.moveinout@example.com with:
+              </h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">Description of the IP work in question</li>
+                <li className="">Proof of ownership</li>
+                <li className="">Details of the alleged infringement</li>
+              </ul>
+
+              <p className="mt-2">
+                We will investigate promptly and take necessary action, which
+                may include removing the infringing material or contacting the
+                responsible party.
+              </p>
+            </div>
+
+            {/* 7 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                7. Legal Compliance
+              </h1>
+              <p className="text-[16px] mb-2">
+                We comply with applicable IP laws in all jurisdictions where we
+                operate, including but not limited to:
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">
+                  <span className="font-bold">Copyright Acts</span> of relevant
+                  countries
+                </li>
+                <li className="">
+                  <span className="font-bold">Trademark Acts </span> of relevant
+                  countries
+                </li>
+                <li className="">
+                  <span className="font-bold">
+                    Digital Millennium Copyright Act (DMCA)
+                  </span>{" "}
+                  for U.S.-related services
+                </li>
+                <li className="">
+                  <span className="font-bold">WIPO treaties</span> for
+                  cross-border IP protection
+                </li>
+              </ul>
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                8. Changes to This Policy
+              </h1>
+              <p>
+                We may update this policy from time to time. Any changes will be
+                posted on our website with the updated “Last Updated” date.
+              </p>
             </div>
           </div>
         );
