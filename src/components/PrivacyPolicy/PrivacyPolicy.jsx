@@ -721,9 +721,6 @@ const PrivacyPolicy = () => {
             </div>
           </div>
         );
-
-      case "property":
-
       case "content":
         return (
           <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
@@ -779,17 +776,21 @@ const PrivacyPolicy = () => {
                   You retain ownership of any content you create and submit.
                 </li>
                 <li>
-                  By submitting content, you grant <span className="font-bold"> DEJAVU </span> a
-                  non-exclusive, royalty-free, worldwide license to use, store,
-                  reproduce, and display your content solely for:
+                  By submitting content, you grant{" "}
+                  <span className="font-bold"> DEJAVU </span> a non-exclusive,
+                  royalty-free, worldwide license to use, store, reproduce, and
+                  display your content solely for:
                   <ol className="list-decimal list-inside space-y-1">
                     <li className="">Providing and improving our services</li>
-                    <li className="">Marketing or promotional purposes (only with your explicit consent)</li>
+                    <li className="">
+                      Marketing or promotional purposes (only with your explicit
+                      consent)
+                    </li>
                   </ol>
-
                 </li>
                 <li>
-                  We will <span className="font-bold"> not </span> sell your content or use it for unrelated purposes without your consent.
+                  We will <span className="font-bold"> not </span> sell your
+                  content or use it for unrelated purposes without your consent.
                 </li>
               </ul>
             </div>
@@ -797,27 +798,17 @@ const PrivacyPolicy = () => {
             {/* 3 */}
             <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                3. Confidentiality of Proprietary Information
+                3. Use of User Content
               </h1>
               <h2 className="text-[16px]  mb-2">
-                We may collect and handle IP-related data, such as:
+                We may use user-submitted content for:
               </h2>
               <ul className="list-disc list-inside space-y-1">
-                <li>Project specifications</li>
-                <li>Confidential designs</li>
-                <li>Custom service layouts</li>
-                <li>Internal operational methods</li>
-              </ul>
-              <h2 className="text-[16px]  my-2">We commit to:</h2>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Storing such information securely</li>
+                <li>Service delivery and customization</li>
+                <li>Internal training and quality control</li>
+                <li>Troubleshooting and dispute resolution</li>
                 <li>
-                  Using it solely for the purpose of providing agreed services
-                </li>
-                <li>Restricting access to authorized personnel only</li>
-                <li>
-                  Not disclosing it to third parties without prior written
-                  consent
+                  Customer reviews and testimonials (with your permission)
                 </li>
               </ul>
             </div>
@@ -825,115 +816,73 @@ const PrivacyPolicy = () => {
             {/* 4 */}
             <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                4. Use of Our Intellectual Property
+                4. Confidentiality of Sensitive Content
               </h1>
-              <h2>You may not:</h2>
+              <h2>
+                Some user content may include personal or proprietary
+                information (e.g., home access codes, private layouts). We
+                commit to:
+              </h2>
 
               <ul className="list-disc list-inside space-y-1">
+                <li>Storing such content securely</li>
+                <li>Restricting access to authorized personnel only</li>
                 <li>
-                  Copy, reproduce, or distribute our materials without prior
-                  written consent
-                </li>
-                <li>
-                  Use our trademarks, service names, or logos without
-                  authorization
-                </li>
-                <li>
-                  Modify or adapt our original works for commercial use without
-                  permission
+                  Not sharing it with third parties except where necessary to
+                  complete the service or comply with the law
                 </li>
               </ul>
-
-              <p className="mt-2">
-                Limited use of our materials is permitted for personal,
-                non-commercial purposes, provided that credit is given and
-                copyright notices remain intact.
-              </p>
             </div>
 
             {/* 5 */}
             <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                5. Protection Measures
+                5. Prohibited User Content
               </h1>
               <h2 className="text-[16px]  mb-2">
-                We implement the following measures to safeguard IP-related
-                data:
+                You may not submit content that:
               </h2>
               <ul className="list-disc list-inside space-y-1">
                 <li>
-                  <span className="font-bold">Access Control </span> – Only
-                  authorized staff have access to sensitive files
+                  Is illegal, defamatory, or infringing on the rights of others
                 </li>
-                <li>
-                  <span className="font-bold">Encryption </span>– Secure
-                  transmission and storage of digital assets
-                </li>
-                <li>
-                  <span className="font-bold">
-                    Non-Disclosure Agreements (NDAs){" "}
-                  </span>
-                  – Required for contractors and partners handling sensitive IP
-                </li>
-                <li>
-                  <span className="font-bold">Monitoring & Enforcement </span>–
-                  Actively monitoring for unauthorized use and enforcing our
-                  rights
-                </li>
+                <li>Contains viruses, malware, or malicious code</li>
+                <li>Violates any applicable laws or regulations</li>
+                <li>Is sexually explicit, discriminatory, or offensive</li>
               </ul>
+              <p className="mt-2">
+                We reserve the right to remove such content without notice.
+              </p>
             </div>
 
             {/* 6 */}
             <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                6. Reporting IP Infringement
+                6. Retention of User Content
               </h1>
               <h2 className="mb-2">
-                If you believe your IP has been used on our website or in our
-                services without authorization, please contact us at
-                dejavu.moveinout@example.com with:
+                We retain user-submitted content only as long as necessary for
+                the purposes described in this policy. Upon request, we will
+                delete your content unless required by law to retain it.
               </h2>
-
-              <ul className="list-disc list-inside space-y-1">
-                <li className="">Description of the IP work in question</li>
-                <li className="">Proof of ownership</li>
-                <li className="">Details of the alleged infringement</li>
-              </ul>
-
-              <p className="mt-2">
-                We will investigate promptly and take necessary action, which
-                may include removing the infringing material or contacting the
-                responsible party.
-              </p>
             </div>
 
             {/* 7 */}
             <div>
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
-                7. Legal Compliance
+                7. Sharing of User Content
               </h1>
               <p className="text-[16px] mb-2">
-                We comply with applicable IP laws in all jurisdictions where we
-                operate, including but not limited to:
+                We may share your content with:
               </p>
               <ul className="list-disc list-inside space-y-1">
                 <li className="">
-                  <span className="font-bold">Copyright Acts</span> of relevant
-                  countries
+                  Service providers or contractors involved in fulfilling your
+                  request
                 </li>
                 <li className="">
-                  <span className="font-bold">Trademark Acts </span> of relevant
-                  countries
-                </li>
-                <li className="">
-                  <span className="font-bold">
-                    Digital Millennium Copyright Act (DMCA)
-                  </span>{" "}
-                  for U.S.-related services
-                </li>
-                <li className="">
-                  <span className="font-bold">WIPO treaties</span> for
-                  cross-border IP protection
+                  Legal authorities if required to comply with laws or respond
+                  to legal claims
                 </li>
               </ul>
             </div>
@@ -941,7 +890,46 @@ const PrivacyPolicy = () => {
             {/* 8 */}
             <div>
               <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
-                8. Changes to This Policy
+                8. Security of User Content
+              </h1>
+              <p>
+                We implement technical and organizational measures to protect
+                user content, including:
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">Encryption during transmission and storage</li>
+                <li className="">
+                  Access controls and authentication procedures
+                </li>
+                <li className="">Regular security monitoring</li>
+              </ul>
+            </div>
+
+            {/* 9 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                9. Your Rights Regarding User Content
+              </h1>
+              <p className="mb-2">You have the right to:</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">Request a copy of your submitted content</li>
+                <li className="">Request corrections to inaccurate content</li>
+                <li className="">
+                  Request deletion of your content (subject to legal and
+                  operational requirements)
+                </li>
+                <li className="">
+                  Withdraw consent for public display of content at any time
+                </li>
+              </ul>
+              <p className="mt-2">
+                To exercise these rights, contact us at [your email address].
+              </p>
+            </div>
+            {/* 10 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                10. Changes to This Policy
               </h1>
               <p>
                 We may update this policy from time to time. Any changes will be
@@ -950,6 +938,8 @@ const PrivacyPolicy = () => {
             </div>
           </div>
         );
+
+      case "property":
         return (
           <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
             <div className=" ">
@@ -1177,6 +1167,209 @@ const PrivacyPolicy = () => {
               <p>
                 We may update this policy from time to time. Any changes will be
                 posted on our website with the updated “Last Updated” date.
+              </p>
+            </div>
+          </div>
+        );
+
+      case "limitation":
+        return (
+          <div className="pt-[40px] px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className=" ">
+              <p className="pb-[12px]">
+                This Limitations of Liability Policy explains the extent of {""}
+                <span className="font-bold">DEJAVU’s</span> (“we,” “our,” or
+                “us”) responsibility in connection with the use of our website,
+                services, and any related content. By engaging with our services
+                or website, you acknowledge and agree to these limitations.
+              </p>
+            </div>
+
+            {/* 1 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                1. General Limitation
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                To the fullest extent permitted by applicable law:
+              </h2>
+              <ul className="list-disc list-outside space-y-1">
+                <li>
+                  We are not liable for any indirect, incidental, special,
+                  consequential, or punitive damages, including but not limited
+                  to:
+                  <ol className="list-disc list-inside">
+                    <li className="">Loss of income or revenue</li>
+                    <li className="">Loss of business opportunities</li>
+                    <li className="">Loss of data</li>
+                    <li className="">Emotional distress</li>
+                    <li className="">
+                      Property damage not directly caused by our negligence
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Our total liability, whether in contract, tort (including
+                  negligence), or otherwise, will{" "}
+                  <span className="font-bold">
+                    {" "}
+                    not exceed the total amount you paid for the service in
+                    question.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* 2 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                2. Service-Specific Limitations
+              </h1>
+              <h2 className="font-bold">
+                A. Move-In Concierge & Move-Out Concierge
+              </h2>
+              <p className="my-2">We are not responsible for:</p>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Defects in the original product or manufacturer’s design
+                </li>
+                <li>
+                  Improper use or installation contrary to manufacturer
+                  guidelines after service completion
+                </li>
+                <li>
+                  Wear and tear, accidental damage, or misuse occurring after
+                  assembly
+                </li>
+              </ul>
+              <h2 className="font-bold mt-2">B. Furniture Assembly</h2>
+              <p className="my-2">We are not liable for:</p>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Defects in the original product or manufacturer’s design
+                </li>
+                <li>
+                  Improper use or installation contrary to manufacturer
+                  guidelines after service completion
+                </li>
+                <li>
+                  Wear and tear, accidental damage, or misuse occurring after
+                  assembly
+                </li>
+              </ul>
+            </div>
+
+            {/* 3 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                3. Website Use
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We make reasonable efforts to maintain an accurate and secure
+                website, but we do not guarantee:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Uninterrupted or error-free access</li>
+                <li>
+                  That the website is free from viruses or harmful components
+                </li>
+                <li>
+                  That all content is complete, accurate, or current at all
+                  times
+                </li>
+              </ul>
+            </div>
+
+            {/* 4 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                4. Third-Party Services
+              </h1>
+              <h2>
+                Where our services rely on or include work by third-party
+                contractors, suppliers, or platforms:
+              </h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  We are <span className="font-bold">not </span> responsible for
+                  any damages or failures caused by such third parties.
+                </li>
+                <li>
+                  Any disputes must be resolved directly with the third party
+                  unless otherwise stated in a written agreement with us.
+                </li>
+              </ul>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                5. Force Majeure
+              </h1>
+              <h2 className="text-[16px]  mb-2">
+                We are not liable for delays, failures, or damages caused by
+                events beyond our reasonable control, including but not limited
+                to:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Natural disasters
+                </li>
+                <li>
+                  Strikes or labor disputes
+                </li>
+                <li>
+                  Transportation interruptions
+                </li>
+                <li>
+                  Government actions
+                </li>
+                <li>
+                  Internet outages or cyberattacks
+                </li>
+              </ul>
+            </div>
+
+            {/* 6 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                6. Your Responsibilities
+              </h1>
+              <h2 className="mb-2">
+                You are responsible for:
+              </h2>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li className="">Providing accurate and complete information for service delivery</li>
+                <li className="">Ensuring that the service area is safe and accessible</li>
+                <li className="">Inspecting completed work and promptly notifying us of any concerns</li>
+              </ul>
+
+              
+            </div>
+
+            {/* 7 */}
+            <div>
+              <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
+                7. No Waiver of Consumer Rights
+              </h1>
+              <p className="text-[16px] mb-2">
+                Nothing in this policy is intended to exclude or limit any legal rights you have under applicable consumer protection laws.
+              </p>
+              
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h1 className="lg:text-[24px] pb-[12px] text-[20px] text-[#171717] font-medium">
+                8. Governing Law
+              </h1>
+              <p>
+                This policy is governed by the laws of Canada and the province of  Ontario.
+Any disputes shall be subject to the exclusive jurisdiction of the courts in the province where our principal place of business is located.
               </p>
             </div>
           </div>
