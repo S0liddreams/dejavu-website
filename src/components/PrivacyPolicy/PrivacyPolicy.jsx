@@ -1315,21 +1315,11 @@ const PrivacyPolicy = () => {
                 to:
               </h2>
               <ul className="list-disc list-inside space-y-1">
-                <li>
-                  Natural disasters
-                </li>
-                <li>
-                  Strikes or labor disputes
-                </li>
-                <li>
-                  Transportation interruptions
-                </li>
-                <li>
-                  Government actions
-                </li>
-                <li>
-                  Internet outages or cyberattacks
-                </li>
+                <li>Natural disasters</li>
+                <li>Strikes or labor disputes</li>
+                <li>Transportation interruptions</li>
+                <li>Government actions</li>
+                <li>Internet outages or cyberattacks</li>
               </ul>
             </div>
 
@@ -1338,17 +1328,21 @@ const PrivacyPolicy = () => {
               <h1 className="lg:text-[24px] text-[20px] pb-[12px] text-[#171717] font-medium">
                 6. Your Responsibilities
               </h1>
-              <h2 className="mb-2">
-                You are responsible for:
-              </h2>
+              <h2 className="mb-2">You are responsible for:</h2>
 
               <ul className="list-disc list-inside space-y-1">
-                <li className="">Providing accurate and complete information for service delivery</li>
-                <li className="">Ensuring that the service area is safe and accessible</li>
-                <li className="">Inspecting completed work and promptly notifying us of any concerns</li>
+                <li className="">
+                  Providing accurate and complete information for service
+                  delivery
+                </li>
+                <li className="">
+                  Ensuring that the service area is safe and accessible
+                </li>
+                <li className="">
+                  Inspecting completed work and promptly notifying us of any
+                  concerns
+                </li>
               </ul>
-
-              
             </div>
 
             {/* 7 */}
@@ -1357,9 +1351,9 @@ const PrivacyPolicy = () => {
                 7. No Waiver of Consumer Rights
               </h1>
               <p className="text-[16px] mb-2">
-                Nothing in this policy is intended to exclude or limit any legal rights you have under applicable consumer protection laws.
+                Nothing in this policy is intended to exclude or limit any legal
+                rights you have under applicable consumer protection laws.
               </p>
-              
             </div>
 
             {/* 8 */}
@@ -1368,10 +1362,209 @@ const PrivacyPolicy = () => {
                 8. Governing Law
               </h1>
               <p>
-                This policy is governed by the laws of Canada and the province of  Ontario.
-Any disputes shall be subject to the exclusive jurisdiction of the courts in the province where our principal place of business is located.
+                This policy is governed by the laws of Canada and the province
+                of Ontario. Any disputes shall be subject to the exclusive
+                jurisdiction of the courts in the province where our principal
+                place of business is located.
               </p>
             </div>
+          </div>
+        );
+
+      case "other":
+        return (
+          <div className="pt-[40px]  px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className=" ">
+              <h1 className="pb-[12px] text-[#171717] text-[24px]  font-medium">
+                Links to Other Websites
+              </h1>
+
+              <p className="text-[14px]  my-4 leading-[150%]">
+                Our Services may contain links to third-party websites,
+                applications, or services (“Third-Party Sites”) that are not
+                operated or controlled by{" "}
+                <span className="font-bold"> DEJAVU</span>. These links are
+                provided for your convenience and informational purposes only.
+              </p>
+
+              <p className=" text-[14px] my-4 leading-[150%]">
+                When you click on a link to a Third-Party Site, you will be
+                directed to that site and will be subject to its own privacy
+                policy, terms of service, and practices.
+                <span className="font-bold">
+                  {" "}
+                  We are not responsible for, and do not endorse, the privacy
+                  practices, security standards, content, or operations
+                </span>{" "}
+                of any Third-Party Site.
+              </p>
+
+              <h2 className="text-[14px]  my-4 leading-[150%]">
+                We strongly encourage you to:
+              </h2>
+
+              <p className="text-[14px]  my-4 leading-[150%]">
+                <ul className="list-disc list-outside space-y-1">
+                  <li className="">
+                    Review the privacy policy of every site you visit before
+                    providing any personal information.
+                  </li>
+                  <li className="">
+                    Be aware that third parties may collect, use, and share your
+                    data in ways different from our practices.
+                  </li>
+                  <li className="">
+                    Understand that any personal information you provide to a
+                    Third-Party Site is not covered by this Privacy Policy.
+                  </li>
+                </ul>
+              </p>
+
+              <p className="text-[14px] my-4 leading-[150%]">
+                <span className="font-bold"> Disclaimer</span>: Your
+                interactions with any Third-Party Site, including any purchases,
+                service arrangements, or communications, are solely between you
+                and the third party. We disclaim any liability for loss, damage,
+                or issues arising from your use of such sites.
+              </p>
+            </div>
+          </div>
+        );
+
+      case "modifications":
+        return (
+          <div className="pt-[40px]  px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div class="   space-y-4">
+              <p>
+                <span class="font-bold">DEJAVU</span> reserves the right, at our
+                sole discretion, to modify, update, or replace any part of these
+                Terms of Use at any time. Changes may be made to reflect:
+              </p>
+
+              <ul class="list-disc list-inside space-y-1 pl-4">
+                <li>Updates to our services, features, or operations.</li>
+                <li>
+                  Compliance with changes in laws, regulations, or industry
+                  standards.
+                </li>
+                <li>
+                  Adjustments for security, functionality, or business needs.
+                </li>
+              </ul>
+
+              <p>
+                When we make material changes to these Terms of Use, we will:
+              </p>
+
+              <ul class="list-disc list-inside space-y-1 pl-4">
+                <li>
+                  Post the updated Terms on our website with a revised
+                  “Effective Date” at the top of the page.
+                </li>
+                <li>
+                  Provide notice by email or through our Services (where legally
+                  required) before the changes take effect.
+                </li>
+              </ul>
+
+              <p>
+                Your continued access to or use of our Services after the
+                updated Terms are posted constitutes your acceptance of those
+                changes. If you do not agree to the updated Terms, you must
+                discontinue using our Services immediately.
+              </p>
+
+              <p>
+                We encourage you to review these Terms periodically to stay
+                informed about our current policies and practices.
+              </p>
+            </div>
+          </div>
+        );
+
+      case "termination":
+        return (
+          <div className="pt-[40px]  px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className="px-4 py-6 md:px-8 md:py-10 text-gray-800">
+              <h2 className="text-xl md:text-2xl font-bold mb-4">
+                Termination
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed mb-4">
+                We may, at our sole discretion and without prior notice, suspend
+                or terminate your access to our Services, in whole or in part,
+                for any reason, including but not limited to:
+              </p>
+
+              <ul className="list-disc pl-6 text-sm md:text-base space-y-2 mb-4">
+                <li>
+                  Violation of these Terms of Use or other applicable policies.
+                </li>
+                <li>Fraudulent, abusive, or unlawful activity.</li>
+                <li>
+                  Conduct that, in our judgment, harms or may harm [Your Company
+                  Name], our customers, or the public.
+                </li>
+                <li>Non-payment of fees (if applicable).</li>
+              </ul>
+
+              <p className="text-sm md:text-base leading-relaxed mb-4">
+                Upon termination:
+              </p>
+              <ul className="list-disc pl-6 text-sm md:text-base space-y-2 mb-4">
+                <li>Your right to use the Services will immediately cease.</li>
+                <li>
+                  Any outstanding obligations or liabilities you have to us will
+                  survive termination.
+                </li>
+                <li>
+                  We may delete or restrict access to any information or content
+                  associated with your account, subject to applicable laws
+                  regarding data retention.
+                </li>
+              </ul>
+
+              <p className="text-sm md:text-base leading-relaxed mb-4">
+                You may also terminate your account and discontinue use of our
+                Services at any time by contacting us at [Insert Contact Email].
+              </p>
+
+              <p className="text-sm md:text-base leading-relaxed">
+                <strong>Survival of Terms:</strong> All provisions of these
+                Terms which by their nature should survive termination —
+                including ownership provisions, warranty disclaimers, indemnity,
+                and limitations of liability — shall survive and remain in full
+                force and effect.
+              </p>
+            </div>
+          </div>
+        );
+      case "governing":
+        return (
+          <div className="pt-[40px]  px-[20px] pb-[80px] text-[14px]  leading-[150%] flex flex-col lg:gap-[56px] gap-[8px] text-[#737373]">
+            <div className="px-4 py-6 md:px-8 md:py-10 text-gray-800">
+  <h2 className="text-xl md:text-2xl font-bold mb-4">Governing Law</h2>
+
+  <p className="text-sm md:text-base leading-relaxed mb-4">
+    These Terms of Use and any dispute, claim, or controversy arising out of or
+    relating to your use of our Services shall be governed by and construed in
+    accordance with the laws of <span className="font-medium">the Province of Ontario, Canada</span>, 
+    and the applicable federal laws of Canada, without regard to its conflict of law provisions.
+  </p>
+
+  <p className="text-sm md:text-base leading-relaxed mb-4">
+    Where applicable, you agree to submit to the 
+    <span className="font-medium"> exclusive jurisdiction of the courts located in Toronto, Ontario, Canada</span> 
+    for the resolution of any legal matter arising under or in connection with
+    these Terms.
+  </p>
+
+  <p className="text-sm md:text-base leading-relaxed">
+    If you access our Services from outside Canada, you are responsible for 
+    complying with all local laws applicable to you. The use of our Services in 
+    jurisdictions where such use is unlawful is strictly prohibited.
+  </p>
+</div>
+
           </div>
         );
 
@@ -1381,7 +1574,7 @@ Any disputes shall be subject to the exclusive jurisdiction of the courts in the
   };
 
   return (
-    <div className="flex flex-col lg:flex-row  gap-6 lg:gap-[24px] lg:pt-[2px]  lg:pb-[64px] lg:px-[72px] xl:h-[1843px]">
+    <div className="flex flex-col lg:flex-row  gap-6 lg:gap-[24px] lg:pt-[2px]  lg:pb-[64px] lg:px-[72px] xl:h-full">
       {/* Sidebar */}
       <div className="w-full lg:w-[320px] px-[20px] lg:px-0 bg-white h-fit lg:sticky lg:top-0 lg:self-start">
         <div className="p-2"></div>
