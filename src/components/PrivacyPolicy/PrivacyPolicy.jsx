@@ -14,152 +14,308 @@ const PrivacyPolicy = () => {
     { id: "modifications", label: "Modifications to Terms of Use" },
     { id: "termination", label: "Termination" },
     { id: "governing", label: "Governing Law" },
-    { id: "Contact", label: "Contact Us" },
+   
   ];
 
   const renderPageContent = () => {
     switch (activePage) {
       case "acceptance":
         return (
-          <div style={{ paddingTop: '40px', paddingRight: '20px', paddingLeft: '20px', paddingBottom: '80px', color: '#4B5563', fontSize: '16px', lineHeight: '1.625', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-    <p>
-        By accessing or using our website, services, or booking platform, you agree to be bound by the following terms and conditions (“Terms of Use”). Please read them carefully before using our services. If you do not agree to these terms, please do not use our site or services.
-    </p>
-    
-    {/* 1 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            1. Acceptance of Terms
-        </h1>
-        <p>
-            By using this website or any Dejavu Move-In-Out service, you confirm that you are at least 18 years old and legally capable of entering into a binding contract. If you are using our services on behalf of an organization or another person, you agree that you have the authority to bind them to these terms.
-        </p>
-    </div>
-    
-    {/* 2 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            2. Services Overview
-        </h1>
-        <p>
-            Dejavu Move-In-Out provides move-in concierge services, furniture assembly, move-out support, and related home setup services. All services are subject to availability, geographic coverage, and scope limitations as listed on our website or communicated during the booking process.
-        </p>
-    </div>
-    
-    {/* 3 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            3. Bookings and Payments
-        </h1>
-        <p>
-            All service bookings must be made through our official website or approved communication channels. Payments are required to confirm bookings. We reserve the right to cancel or reschedule appointments due to availability or unforeseen circumstances. Customers will be notified promptly in such cases.
-        </p>
-    </div>
-    
-    {/* 4 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            4. Cancellations and Rescheduling
-        </h1>
-        <p>
-            Clients may cancel or reschedule a service up to 24 hours in advance without penalty. Late cancellations may be subject to a partial service charge. Full cancellation and refund policies are available on the FAQ page or upon request.
-        </p>
-    </div>
-    
-    {/* 5 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            5. Client Responsibilities
-        </h1>
-        <h2 style={{ fontSize: '18px', marginBottom: '8px' }}>
-            Clients are responsible for:
-        </h2>
-        <ul style={{ listStyleType: 'disc', listStylePosition: 'inside', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            <li>Providing accurate booking information</li>
-            <li>Ensuring safe and accessible work environments</li>
-            <li>Notifying us of any building or logistical restrictions in advance</li>
-        </ul>
-        <p style={{ marginTop: '12px' }}>
-            Failure to do so may result in delays, additional charges, or cancellation of service.
-        </p>
-    </div>
-    
-    {/* 6 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            6. Service Limitations
-        </h1>
-        <h2 style={{ fontSize: '18px', marginBottom: '8px' }}>
-            Our team does not offer services that involve:
-        </h2>
-        <ul style={{ listStyleType: 'disc', listStylePosition: 'inside', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            <li>Heavy lifting over safety-approved weight limits</li>
-            <li>Hazardous material handling</li>
-            <li>Complex electrical or plumbing installation</li>
-        </ul>
-        <p style={{ marginTop: '12px' }}>
-            Any request outside the scope of our services must be approved in writing.
-        </p>
-    </div>
-    
-    {/* 7 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            7. Liability and Damages
-        </h1>
-        <h2 style={{ fontSize: '18px', marginBottom: '8px' }}>
-            Dejavu Move-In-Out is insured and takes reasonable care with all items and property. However, we are not liable for:
-        </h2>
-        <ul style={{ listStyleType: 'disc', listStylePosition: 'inside', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            <li>Pre-existing damage</li>
-            <li>Items improperly packed by the client</li>
-            <li>Damage resulting from unclear or incomplete instructions</li>
-        </ul>
-        <p style={{ marginTop: '12px' }}>
-            Claims for damage must be submitted in writing within 48 hours of service completion.
-        </p>
-    </div>
-    
-    {/* 8 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            8. Intellectual Property
-        </h1>
-        <p>
-            All content on this website—including logos, text, images, and software—is the property of Dejavu Move-In-Out or its licensors and may not be reproduced, distributed, or used without express permission.
-        </p>
-    </div>
-    
-    {/* 9 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            9. Privacy
-        </h1>
-        <p>
-            Your privacy is important to us. By using our website or services, you consent to the collection and use of information as described in our Privacy Policy.
-        </p>
-    </div>
-    
-    {/* 10 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            10. Amendments
-        </h1>
-        <p>
-            We may update these Terms of Use at any time. Any changes will be posted on this page, and your continued use of the website or services will constitute your acceptance of the updated terms.
-        </p>
-    </div>
-    
-    {/* 11 */}
-    <div>
-        <h1 style={{ fontSize: '24px', paddingBottom: '12px', color: '#111827', fontWeight: '500' }}>
-            11. Contact Us
-        </h1>
-        <p>
-            If you have any questions about these Terms, please contact us at: <a href="mailto:hello@dejavumoveinout.ca" style={{ color: '#2563EB', textDecoration: 'underline' }}>hello@dejavumoveinout.ca</a>
-        </p>
-    </div>
-</div>
+          <div
+            style={{
+              paddingTop: "40px",
+              paddingRight: "20px",
+              paddingLeft: "20px",
+              paddingBottom: "80px",
+              color: "#4B5563",
+              fontSize: "16px",
+              lineHeight: "1.625",
+              display: "flex",
+              flexDirection: "column",
+              gap: "24px",
+            }}
+          >
+            <p>
+              By accessing or using our website, services, or booking platform,
+              you agree to be bound by the following terms and conditions
+              (“Terms of Use”). Please read them carefully before using our
+              services. If you do not agree to these terms, please do not use
+              our site or services.
+            </p>
+
+            {/* 1 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                1. Acceptance of Terms
+              </h1>
+              <p>
+                By using this website or any Dejavu Move-In-Out service, you
+                confirm that you are at least 18 years old and legally capable
+                of entering into a binding contract. If you are using our
+                services on behalf of an organization or another person, you
+                agree that you have the authority to bind them to these terms.
+              </p>
+            </div>
+
+            {/* 2 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                2. Services Overview
+              </h1>
+              <p>
+                Dejavu Move-In-Out provides move-in concierge services,
+                furniture assembly, move-out support, and related home setup
+                services. All services are subject to availability, geographic
+                coverage, and scope limitations as listed on our website or
+                communicated during the booking process.
+              </p>
+            </div>
+
+            {/* 3 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                3. Bookings and Payments
+              </h1>
+              <p>
+                All service bookings must be made through our official website
+                or approved communication channels. Payments are required to
+                confirm bookings. We reserve the right to cancel or reschedule
+                appointments due to availability or unforeseen circumstances.
+                Customers will be notified promptly in such cases.
+              </p>
+            </div>
+
+            {/* 4 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                4. Cancellations and Rescheduling
+              </h1>
+              <p>
+                Clients may cancel or reschedule a service up to 24 hours in
+                advance without penalty. Late cancellations may be subject to a
+                partial service charge. Full cancellation and refund policies
+                are available on the FAQ page or upon request.
+              </p>
+            </div>
+
+            {/* 5 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                5. Client Responsibilities
+              </h1>
+              <h2 style={{ fontSize: "18px", marginBottom: "8px" }}>
+                Clients are responsible for:
+              </h2>
+              <ul
+                style={{
+                  listStyleType: "disc",
+                  listStylePosition: "inside",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "4px",
+                }}
+              >
+                <li>Providing accurate booking information</li>
+                <li>Ensuring safe and accessible work environments</li>
+                <li>
+                  Notifying us of any building or logistical restrictions in
+                  advance
+                </li>
+              </ul>
+              <p style={{ marginTop: "12px" }}>
+                Failure to do so may result in delays, additional charges, or
+                cancellation of service.
+              </p>
+            </div>
+
+            {/* 6 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                6. Service Limitations
+              </h1>
+              <h2 style={{ fontSize: "18px", marginBottom: "8px" }}>
+                Our team does not offer services that involve:
+              </h2>
+              <ul
+                style={{
+                  listStyleType: "disc",
+                  listStylePosition: "inside",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "4px",
+                }}
+              >
+                <li>Heavy lifting over safety-approved weight limits</li>
+                <li>Hazardous material handling</li>
+                <li>Complex electrical or plumbing installation</li>
+              </ul>
+              <p style={{ marginTop: "12px" }}>
+                Any request outside the scope of our services must be approved
+                in writing.
+              </p>
+            </div>
+
+            {/* 7 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                7. Liability and Damages
+              </h1>
+              <h2 style={{ fontSize: "18px", marginBottom: "8px" }}>
+                Dejavu Move-In-Out is insured and takes reasonable care with all
+                items and property. However, we are not liable for:
+              </h2>
+              <ul
+                style={{
+                  listStyleType: "disc",
+                  listStylePosition: "inside",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "4px",
+                }}
+              >
+                <li>Pre-existing damage</li>
+                <li>Items improperly packed by the client</li>
+                <li>
+                  Damage resulting from unclear or incomplete instructions
+                </li>
+              </ul>
+              <p style={{ marginTop: "12px" }}>
+                Claims for damage must be submitted in writing within 48 hours
+                of service completion.
+              </p>
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                8. Intellectual Property
+              </h1>
+              <p>
+                All content on this website—including logos, text, images, and
+                software—is the property of Dejavu Move-In-Out or its licensors
+                and may not be reproduced, distributed, or used without express
+                permission.
+              </p>
+            </div>
+
+            {/* 9 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                9. Privacy
+              </h1>
+              <p>
+                Your privacy is important to us. By using our website or
+                services, you consent to the collection and use of information
+                as described in our Privacy Policy.
+              </p>
+            </div>
+
+            {/* 10 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                10. Amendments
+              </h1>
+              <p>
+                We may update these Terms of Use at any time. Any changes will
+                be posted on this page, and your continued use of the website or
+                services will constitute your acceptance of the updated terms.
+              </p>
+            </div>
+
+            {/* 11 */}
+            <div>
+              <h1
+                style={{
+                  fontSize: "24px",
+                  paddingBottom: "12px",
+                  color: "#111827",
+                  fontWeight: "500",
+                }}
+              >
+                11. Contact Us
+              </h1>
+              <p>
+                If you have any questions about these Terms, please contact us
+                at:{" "}
+                <a
+                  href="mailto:hello@dejavumoveinout.ca"
+                  style={{ color: "#2563EB", textDecoration: "underline" }}
+                >
+                  hello@dejavumoveinout.ca
+                </a>
+              </p>
+            </div>
+          </div>
         );
 
       case "Website":
