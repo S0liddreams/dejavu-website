@@ -28,7 +28,7 @@ export default function ProjectComponent({ project }) {
           <div className="lg:h-[737px] h-[757px] gap-[24px] flex flex-col lg:gap-[48px]  ">
             <div className="justify-center flex items-center ">
               <p className="lg:w-[836px] lg:text-[48px] text-[24px] w-[287px]  text-[#171717] font-medium text-center ">
-                Downtown Toronto Condo Unpacked & Ready in a Day
+                {project.title}
               </p>
             </div>
 
