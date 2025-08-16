@@ -99,7 +99,7 @@ const Contact = () => {
           <div className="xl:w-[1296px] gap-[16px] lg:h-[200px] mx-auto ">
             <p className="lg:text-[60px] text-center text-white ">Contact Us</p>
             <div className="w-fit mx-auto">
-              <Breaadcrumbs />
+              
             </div>
           </div>
         </div>

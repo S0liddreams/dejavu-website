@@ -27,7 +27,7 @@ const TermsOfUse = () => {
 
               <p className="mt-4 text-sm sm:text-base leading-relaxed">
                 By accessing, booking, or using any of the services offered by
-                <span className="font-semibold">DEJAVU</span>, including but not
+                <span className="font-semibold"> DEJAVU </span>, including but not
                 limited to Move-In Concierge, Move-Out Concierge, Furniture
                 Assembly, and Add-on Services (collectively, the “Services”),
                 you (“you,” “your,” or “Client”) agree to be bound by these
@@ -37,7 +37,7 @@ const TermsOfUse = () => {
               <p className="mt-4 text-sm sm:text-base leading-relaxed">
                 These Terms constitute a legally binding agreement between you
                 and
-                <span className="font-semibold">DEJAVU</span> (“Company,” “we,”
+                <span className="font-semibold"> DEJAVU </span> (“Company,” “we,”
                 “our,” or “us”). If you do not agree with any part of these
                 Terms, you should not proceed with booking or using our
                 Services.
@@ -772,7 +772,7 @@ const TermsOfUse = () => {
                 <p>
                   All content, materials, and intellectual property associated
                   with
-                  <span className="font-semibold"> [Your Company Name]</span>,
+                  <span className="font-semibold"> DEJAVU </span>,
                   including but not limited to logos, trademarks, service marks,
                   trade names, designs, graphics, images, videos, software,
                   written content, and promotional materials (collectively,
