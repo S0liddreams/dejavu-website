@@ -24,45 +24,49 @@ const services = [
     id: "move-out-concierge",
     title: "Move-Out Concierge",
     description:
-      "Move-Out Concierge service is designed to take the stress out of leaving your old space. From organizing and coordinating logistics to cleaning, packing,",
+    "Moving out is just as stressful as moving in, sometimes even more. Our Move-Out Concierge service takes the pressure off your final days in your old space.",
     image: "/images/serviceImage2.jpg",
     modalDiscription:
-      "Move-Out Concierge service is designed to take the stress out of leaving your old space. From organizing and coordinating logistics to cleaning, packing, and ensuring property handover requirements are met, we handle the details so you can focus on your next chapter. Whether it’s scheduling cleaners, managing disassembly of furniture, arranging repairs, or coordinating with landlords or property managers, our team ensures a seamless, hassle-free move-out experience.",
+        "Moving out is just as stressful as moving in, sometimes even more. Our Move-Out Concierge service takes the pressure off your final days in your old space. Whether you're ending a lease or selling a home, we’ll help with smart packing, item sorting, and leave-no-trace tidying so you can hand over your keys with confidence. It’s perfect for renters who want to secure their deposit or homeowners preparing for buyers.",
+
     inclusions: [
-      "Packing and preparation of items for relocation.",
-      "Disassembly of furniture, fixtures, and appliances as required.",
-      "Space cleaning assistance and organization for turnover.",
-      "Disposal or donation coordination of unwanted items.",
-      "Ensuring the property is left in move-out ready condition.",
+      "Organized packing & labeling",
+      "Decluttering or donation sorting",
+      "Light cleaning & wipe-down",
+      "Trash & packaging removal",
+      "Coordination with movers (if needed)",
     ],
   },
   {
     id: "furniture-assembly",
     title: "Furniture Assembly",
     description:
-      "Our Furniture Assembly service provides expert assistance in putting together your new or existing furniture quickly and securely.",
+    "Skip the frustration of figuring out instruction manuals. Our Furniture Assembly experts handle everything from IKEA wardrobes to custom beds,",
     image: "/images/serviceImage3.jpg",
     modalDiscription:
-    "Our Furniture Assembly service provides expert assistance in putting together your new or existing furniture quickly and securely. From beds, sofas, and dining sets to wardrobes, shelving units, and office furniture, our team ensures every piece is assembled correctly, safely, and according to manufacturer guidelines. We bring the right tools, follow detailed instructions, and leave your space clean and organized so you can enjoy your furniture without the hassle or frustration of doing it yourself.",
+    "Skip the frustration of figuring out instruction manuals. Our Furniture Assembly experts handle everything from IKEA wardrobes to custom beds, bookshelves, desks, and more. Whether it's one piece or a full room, we guarantee a neat, damage-free setup with zero hassle. You sit back, while we bring your new furniture to life.",
     inclusions: [
-      "Professional assembly of new or existing furniture items.",
-      "Secure installation of components per manufacturer’s guidelines.",
-      "Disassembly and reassembly for relocation or reconfiguration purposes.",
-      "Optional alignment with interior layout preferences.",
+      "Beds, bunk beds, cribs",
+      "Desks, tables, and chairs",
+      "Wardrobes, shelves, dressers",
+      "TV stands, home office setups",
     ],
   },
   {
     id: "add-ons",
     title: "Add-ons",
     description:
-      "Add-ons service allows you to customize and enhance your moving or concierge experience with extra conveniences tailored to your needs.",
+    "Need help beyond the basics? Our Add-On Services are designed to complete your home setup experience with those finishing touches that make all the difference.",
     image: "/images/serviceImage4.jpg",
     modalDiscription:
-    "Add-ons service allows you to customize and enhance your moving or concierge experience with extra conveniences tailored to your needs. From packing supplies, deep cleaning, and storage solutions to specialized handling, extra manpower, or same-day support, these optional services give you the flexibility to create a personalized package. With Add-ons, you get more than just the basics—you get the convenience, efficiency, and peace of mind that fit your lifestyle.",
+    "Need help beyond the basics? Our Add-On Services are designed to complete your home setup experience with those finishing touches that make all the difference. From hanging curtains and setting up décor to disposing of packaging or deep cleaning after the move, we’ve got you covered. Just select what you need during booking or let us know on the day.",
     inclusions: [
-      "Customized support beyond standard packages (e.g., décor placement, small appliance setup, specialty handling).",
-      "Tailored solutions to address unique relocation requirements.",
-      "Additional manpower or time allocation upon request",
+      "Curtain and rod installation",
+      "Mirror and frame hanging",
+      "TV mounting",
+      "Trash & box removal",
+      "Light cleaning & wipe-down",
+      "Small appliance setup",
     ],
   },
 ];

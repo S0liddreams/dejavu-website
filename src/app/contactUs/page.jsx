@@ -207,13 +207,13 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`flex items-center gap-2 bg-[#0550A1] text-white rounded-full px-4 py-2 shadow-md hover:shadow-xl transition-all text-sm md:text-base ${
+                  className={`flex items-center gap-2 bg-[#0550A1] font-medium text-white lg:text-[16px] rounded-full pl-4 pr-[5px] py-2 shadow-md hover:shadow-xl transition-all text-sm md:text-base ${
                     isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#043d7a]'
                   }`}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
-                  <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center hover:bg-black transition-all">
-                    <IoIosArrowRoundForward className="text-[#0550A1]" />
+                  <div className="w-[40px] h-[40px] rounded-full bg-white flex items-center justify-center hover:bg-black transition-all">
+                    <IoIosArrowRoundForward className="text-[#0550A1] lg:text-[28px]" />
                   </div>
                 </button>
               </div>
