@@ -17,11 +17,11 @@ const serviceTypes = [
 
 export default function ProjectComponent({ project }) {
   return (
-    <div className="w-full h-full main-container">
-      <div className="lg:h-[1001px] h-full lg:pt-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px] lg:pb-[64px] lg:gap-[24px] flex flex-col">
+    <div className="w-full h-full p-2">
+      <div className="h-[748px] lg:pt-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px]  lg:gap-[24px] flex flex-col">
         <Header2 />
 
-        <div className=" relative w-full h-[833px] p-[24px] flex flex-col lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
+        <div className=" relative w-full h-[833px] lg:h- p-[24px] flex flex-col lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
           <div className="hidden lg:block absolute  left-0 bg-projectpost-image  h-[80%] transparent w-full"></div>
           <div className="  lg:hidden absolute top-[-100px]  left-[55px]  bg-projectpostSm-image  h-[70%] transparent w-[250px] md:w-full"></div>
           {/**Hero section */}
