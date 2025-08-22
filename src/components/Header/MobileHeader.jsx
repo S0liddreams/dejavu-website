@@ -23,15 +23,15 @@ const MobileMenu = () => {
   return (
     <div className="relative lg:hidden">
       {/* Header with hamburger button */}
-      <div className="flex items-center justify-between p-4  shadow-md">
+      <div className="flex items-center justify-between px-4  shadow-xs">
         <div className="text-xl font-bold text-gray-800">
           <div>
             <Image
-              src="/images/dvjlogo.svg"
+              src="/images/DjLogoWhite1.svg"
               alt="Logo"
-              width={56}
+              width={75}
               height={24}
-              className="w-[56px] h-[24px]  lg:hidden"
+              className="w-[75px] h-[24px]  lg:hidden"
             />
           </div>
         </div>

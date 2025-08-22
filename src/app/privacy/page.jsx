@@ -7,7 +7,7 @@ import React from "react";
 const privacy = () => {
   return (
     <div className=" h-screen">
-      <div className="lg:pt-[8px] lg:pb-[64px] lg:px-[72px] pt-[4px] px-[20px] pb-[40px] lg:h-[448px] h-[312px] lg:gap-[24px] ">
+      <div className="lg:pt-[8px] flex flex-col lg:pb-[64px] lg:px-[72px] pt-[4px] px-[20px] pb-[40px] lg:h-[448px] h-[312px] lg:gap-[24px] ">
         <Header2 />
 
         <div className="w-full lg:h-[280px] h-[200px] px-[24px]  rounded-[16px] lg:p-[62px] gap-[88px] bg-[#E6EEF6] flex flex-col ">

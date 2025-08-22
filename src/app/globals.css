@@ -53,7 +53,7 @@ body {
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
 }
 .bg-footerMD-image {
-  background-image: url(''); /* Corrected path */
+  background-image: url('/images/MobileFooterBG.png'); /* Corrected path */
   background-size: cover; /* Optional: Adjusts image to cover the entire element */
   background-position: center; /* Optional: Centers the image */
   background-repeat: no-repeat; /* Optional: Prevents image from repeating */
