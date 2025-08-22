@@ -28,11 +28,11 @@ const MobileMenu2 = () => {
           <div>
             <Link href="/">
             <Image
-              src="/images/logo2.svg"
+              src="/images/DjLogoBlue.svg"
               alt="Logo"
               width={56}
               height={24}
-              className="w-[56px] h-[24px]  lg:hidden"
+              className="w-[75px] h-[24px]  lg:hidden"
             />
             </Link>
           </div>
