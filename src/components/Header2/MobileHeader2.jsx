@@ -32,7 +32,7 @@ const MobileMenu2 = () => {
               alt="Logo"
               width={56}
               height={24}
-              className="w-[75px] h-[24px]  lg:hidden"
+              className="w-[105px] h-[44px]  lg:hidden"
             />
             </Link>
           </div>

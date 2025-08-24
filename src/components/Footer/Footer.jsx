@@ -8,7 +8,7 @@ import { LuFacebook } from "react-icons/lu";
 const Footer = () => {
   return (
     <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1]    py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
-      <div className=" bg-footer-image">
+      <div className="bg-footer-image">
       <div className="xl:w-[1296px]  mx-auto  ">
         <div className=" h-[410px] lg:h-[268px]  lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
           <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
@@ -17,7 +17,7 @@ const Footer = () => {
               <Image
                 src="/images/DjLogoWhite.svg"
                 alt="alt"
-                className=" lg:w-[130px] lg:h-[72px] xl:w-[120px] md:w-[100px] h-[56px] w-[56px]"
+                className=" lg:w-[130px] lg:h-[96px] xl:w-[96px] md:w-[100px] h-[56px] w-[56px]"
                 width={168}
                 height={72}
               />
