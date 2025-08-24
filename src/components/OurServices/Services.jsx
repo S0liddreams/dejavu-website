@@ -75,7 +75,7 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   return (
-    <div className="h-full min-w-[375px] lg:h-[652px] mt-[100px] md:mt-[50px] lg:py-[64px] lg:px-[72px] p-[20px] relative">
+    <div className="h-full min-w-[375px] lg:h-[652px] flex flex-col lg:gap-[30px] mt-[100px] md:mt-[30px] lg:py-[64px] lg:px-[72px] p-[20px] relative">
       <div className="text-center mb-[40px] lg:mb-0">
         <h1 className="text-[24px] font-medium lg:text-[48px] text-[#171717]">
           Our Services

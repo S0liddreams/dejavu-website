@@ -5,17 +5,17 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function HeroComponent() {
   return (
-    <div className="lg:w-full bg-hero-image  h-[748px] rounded-[16px]  ">
+    <div className="lg:w-full bg-hero-image h-[620px]  lg:h-[720px] rounded-[16px]  ">
       
-      <div className=" w-full h-full flex flex-col bg-[#00000066]  lg:gap-[88px] lg:px-[64px] lg:pb-[64px] rounded-[16px]">
+      <div className=" w-full h-full flex flex-col bg-[#00000066]  lg:gap-[60px] lg:px-[64px] lg:pb-[64px] rounded-[16px]">
         <Header />
-        <div className="lg:h-[584px]  lg:w-full  h-[608px] bg-transparent p-[16px] lg:px-[0px]  flex flex-col justify-between ">
-          <div className="lg:w-[746px] lg:h-[172px] w-[335px] mt-[50px] lg:mb-2">
-            <p className="lg:text-[72px] text-[30px] text-white font-medium leading-[120%]">
+        <div className="lg:h-[284px]  lg:w-full  h-[608px] bg-transparent p-[16px] lg:px-[0px]  flex flex-col gap-[115px] lg:gap-[140px]  ">
+          <div className="lg:w-[746px] lg:h-[172px] w-[335px] mt-[50px] ">
+            <p className="xl:text-[72px] lg:text-[50px] text-[30px] text-white font-medium leading-[120%]">
               Moving Made Simple, Setup Made Perfect
             </p>
           </div>
-          <div className="lg:w-full lg:h-[132px] h-[228px] mt-[230px] bg-transparent">
+          <div className="lg:w-full lg:h-[132px] h-[228px] bg-transparent">
             <div className="">
               <ClientFeeds />
             </div>

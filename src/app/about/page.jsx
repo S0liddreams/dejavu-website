@@ -62,21 +62,21 @@ const About = () => {
       </div>
 
       <div className="lg:h-[272px] lg:py-[64px] lg:px-[72px] py-[40px] px-[20px] ">
-        <div className="xl:w-[1296px] lg:h-[144px] grid lg:grid-cols-2  gap-[16px] mx-auto lg:gap-[8px]">
-          <div className=" ">
-            <p className="text-[#171717] font-medium lg:text-[48px] text-[24px]  ">
+        <div className="xl:w-[1296px] xl:h-[144px] grid lg:flex lg:flex-row  gap-[16px] mx-auto lg:gap-[48px]">
+          <div className="xl:w-3/5 lg:w-1/3">
+            <p className="text-[#171717] font-medium xl:text-[48px] lg:text-[34px] text-[24px]  ">
               Our Mission
             </p>
           </div>
-          <div className="">
-            <p className="text-[16px]  text-left text-[#525252]">
+          <div className="xl:w-4/5 lg:w-2/3">
+            <p className="text-[16px]  xl:w-[655px]  leading-[150%]  lg:text-left text-[#525252]">
               We’re on a mission to redefine the moving experience by turning
               one of life’s most stressful moments into a seamless, supportive,
               and even enjoyable transition. We are committed to providing
               premium yet affordable concierge services, ranging from move-in
               and move-out assistance to expert furniture assembly and
-              thoughtful home setup that meet the diverse needs of homeowners,
-              busy professionals, families, students, and newcomers across
+              thoughtful home setup that meet the diverse  needs of homeowners,
+              busy professionals, families, students, and   newcomers across
               Ontario.
             </p>
           </div>
