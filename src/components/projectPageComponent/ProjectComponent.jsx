@@ -17,7 +17,7 @@ const serviceTypes = [
 
 export default function ProjectComponent({ project }) {
   return (
-    <div className="w-full h-full ">
+    <div className="w-full h-full p-2">
       <div className="h-[748px] lg:pt-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px]  lg:gap-[24px] flex flex-col">
         <Header2 />
 
