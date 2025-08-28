@@ -18,16 +18,16 @@ const serviceTypes = [
 export default function ProjectComponent({ project }) {
   return (
     <div className="w-full h-full p-2">
-      <div className="h-[748px] lg:pt-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px]  lg:gap-[24px] flex flex-col">
+      <div className="h-[748px] lg:py-[8px] pt-[4px] px-[20px] pb-[40px] gap-[8px] lg:px-[72px]  lg:gap-[44px] flex flex-col">
         <Header2 />
 
-        <div className=" relative w-full h-[833px] lg:h-[1000px] p-[24px] flex flex-col lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
-          <div className="hidden lg:block absolute  left-0 bg-projectpost-image  h-[80%] transparent w-full"></div>
-          <div className="  lg:hidden absolute top-[-100px]  left-[55px]  bg-projectpostSm-image  h-[70%] transparent w-[250px] md:w-full"></div>
+        <div className=" relative w-full h-[833px] lg:h-[1000px] p-[24px] flex flex-col  lg:gap-[8px] lg:py-[48px] lg:px-[40px]  rounded-[16px] bg-[#E6EEF6]">
+          <div className="hidden lg:block absolute  left-0 bg-projectpost-image  h-[80%] transparent w-full "></div>
+          <div className="  lg:hidden absolute top-[-100px]  left-[55px]  bg-projectpostSm-image  h-[70%] transparent w-[250px] md:w-[640px] lg:w-full"></div>
           {/**Hero section */}
           <div className="lg:h-[737px] h-[757px] gap-[24px] flex flex-col lg:gap-[48px]  ">
             <div className="justify-center flex items-center ">
-              <p className="lg:w-[836px] lg:text-[48px] text-[24px] w-[287px]  text-[#171717] font-medium text-center ">
+              <p className="lg:w-[836px] lg:text-[48px] text-[24px] w-[287px] md:w-[400px]  text-[#171717] font-medium text-center ">
                 {project.title}
               </p>
             </div>
@@ -88,7 +88,7 @@ export default function ProjectComponent({ project }) {
 
       {/**Overview */}
 
-      <div className="w-full lg:h-[304px] h-[401px] lg:mt-[220px] lg:py-[64px] py-[40px] px-[20px] lg:px-[72px] flex flex-col gap-[8px] lg:gap-[8px]">
+      <div className="w-full lg:h-[304px] h-[391px] md:h-[300px] lg:mt-[250px] mt-[180px] lg:py-[64px] py-[40px] px-[20px] lg:px-[72px] flex flex-col gap-[8px] lg:gap-[8px]">
         <div className="lg:h-[176px] h-[321px] md:h-[270px] gap-[16px] lg:gap-0   flex-col flex lg:flex-row ">
           <div className="  xl:w-3/5 lg:w-1/3 ">
             <p className="text-[#171717] lg:text-[36px] text-[20px] font-medium">
@@ -177,7 +177,7 @@ export default function ProjectComponent({ project }) {
 
       {/**Executions */}
 
-      <div className="w-full lg:h-[360px] h-[401px] lg:py-[64px] py-[40px] px-[20px] lg:px-[72px] flex flex-col gap-[8px] lg:gap-[8px]">
+      <div className="w-full lg:h-[360px] h-[301px] lg:py-[64px] py-[40px] px-[20px] lg:px-[72px] flex flex-col gap-[8px] lg:gap-[8px]">
         <div className="lg:h-[176px] h-[321px] md:h-[270px] gap-[16px] lg:gap-0   flex-col flex lg:flex-row ">
           <div className="  xl:w-3/5 lg:w-1/3 ">
             <p className="text-[#171717] lg:text-[36px] text-[20px] font-medium">

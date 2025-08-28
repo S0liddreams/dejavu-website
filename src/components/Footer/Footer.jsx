@@ -9,15 +9,15 @@ const Footer = () => {
   return (
     <div className="w-full lg:h-[469px] h-[603px] bg-[#0550A1]    py-[40px] px-[20px] lg:py-[64px] lg:px-[72px] rounded-[16px] mt-[8px]">
       <div className="bg-footer-image">
-      <div className="xl:w-[1296px]  mx-auto  ">
-        <div className=" h-[410px] lg:h-[268px]  lg:flex lg:flex-row justify-between mt-[40px] lg:mt-[40px]  items-center">
+      <div className="xl:w-[1296px]  mx-auto ">
+        <div className=" h-[410px] lg:h-[268px]  lg:flex lg:flex-row justify-between mt-[50px] lg:mt-[40px]  items-center">
           <div className=" lg:gap-[26px] gap-[40px] grid xl:w-[634px] lg:w-[534px] md:w-full min-w-[305px]  h-fit">
             <div>
               <Link href="/">
               <Image
-                src="/images/DjLogoWhite.svg"
+                src="/images/HorizontalLogo.png"
                 alt="alt"
-                className=" lg:w-[130px] lg:h-[96px] xl:w-[96px] md:w-[100px] h-[56px] w-[56px]"
+                className="  lg:h-[88px] lg:w-[274px]  h-[56px] w-[174px]"
                 width={168}
                 height={72}
               />
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="xl:w-[246px] lg:w-[170px] md:w-[400px] w-[250px] xl:h-[119px] lg:h-[110px] flex flex-row justify-between mt-[40px] ">
+          <div className="xl:w-[246px] lg:w-[170px] md:w-[400px] w-[250px] xl:h-[119px] lg:h-[110px] flex flex-row justify-between mt-[50px] lg:mt-[10px] ">
             <div className=" xl:h-[74px] lg:h-[72px] grid gap-[28px] text-white xl:text-[14px] text-[12px] lg:text-[12px] font-medium">
               <p>
                 <Link href="/about">About Us</Link>

@@ -6,11 +6,11 @@ import React from "react";
 
 const privacy = () => {
   return (
-    <div className=" h-screen p-2">
+    <div className=" h-screen p-2 flex flex-col gap-[20px]">
       <div className="lg:pt-[8px] flex flex-col lg:pb-[64px] lg:px-[72px] pt-[4px] px-[20px] pb-[40px] lg:h-[448px] h-[312px] lg:gap-[24px] ">
         <Header2 />
 
-        <div className="w-full lg:h-[280px] h-[200px] px-[24px]  rounded-[16px] lg:p-[62px] gap-[88px] bg-[#E6EEF6] flex flex-col ">
+        <div className="w-full lg:h-[280px] h-[200px] px-[24px] mt-[20px] rounded-[16px] lg:p-[62px] gap-[88px] bg-[#E6EEF6] flex flex-col ">
           <div className="w-full h-[200px] lg:gap-[16px] gap-[8px] flex flex-col justify-center items-center ">
             <p className="lg:text-[60px] text-[30px] font-medium text-center text-[#0550A1]">
               Privacy Policy
