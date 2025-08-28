@@ -23,7 +23,7 @@ const MobileMenu = () => {
   return (
     <div className="relative lg:hidden">
       {/* Header with hamburger button */}
-      <div className="flex items-center justify-between px-4  shadow-xs">
+      <div className="flex items-center justify-between   shadow-xs">
         <div className="text-xl font-bold text-gray-800">
           <div>
             <Image
@@ -31,7 +31,7 @@ const MobileMenu = () => {
               alt="Logo"
               width={75}
               height={24}
-              className="w-[105px] h-[44px]  lg:hidden"
+              className="w-[110px] h-[56px]  lg:hidden"
             />
           </div>
         </div>

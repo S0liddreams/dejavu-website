@@ -23,7 +23,7 @@ const MobileMenu2 = () => {
   return (
     <div className="relative lg:hidden">
       {/* Header with hamburger button */}
-      <div className="flex items-center justify-between p-4 ">
+      <div className="flex items-center justify-between  ">
         <div className="text-xl font-bold text-gray-800">
           <div>
             <Link href="/">
@@ -32,7 +32,7 @@ const MobileMenu2 = () => {
               alt="Logo"
               width={56}
               height={24}
-              className="w-[105px] h-[44px]  lg:hidden"
+              className="w-[110px] h-[56px]  lg:hidden"
             />
             </Link>
           </div>
