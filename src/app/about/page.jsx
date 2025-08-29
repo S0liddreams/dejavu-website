@@ -75,8 +75,8 @@ const About = () => {
               and even enjoyable transition. We are committed to providing
               premium yet affordable concierge services, ranging from move-in
               and move-out assistance to expert furniture assembly and
-              thoughtful home setup that meet the diverse  needs of homeowners,
-              busy professionals, families, students, and   newcomers across
+              thoughtful home setup that meet the diverse needs of homeowners,
+              busy professionals, families, students, and newcomers across
               Ontario.
             </p>
           </div>
@@ -106,7 +106,9 @@ const About = () => {
       {/**OUR STORY */}
       <div className="h-full lg:py-[64px] lg:px-[72px] py-[40px] px-[20px]  ">
         <div className="h-full lg:h-[556px] xl:w-[1296px] rounded-[16px] lg:p-[20px] bg-ourstory-image mx-auto"></div>
-        <div className="xl:h-[576px] h-[1230px] md:h-[730px]  w-[295px] md:w-[595px]  lg:w-[700px] xl:w-[1076px] rounded-bl-[16px] rounded-br-[16px] lg:gap-[8px] pt-[16px] px-[16px]  lg:p-[24px] bg-[#054993] mx-auto">
+
+        {/** when acivating the algorithym  Return xl hight to 510px , them Md Hight to 730px which was previously usef oft lg-screen hight as well, then sm-screen hight to 1230px */}
+        <div className="xl:h-[470px]  h-[1030px] md:h-[580px] lg:h-[630px]  w-[295px] md:w-[595px]  lg:w-[700px] xl:w-[1076px] rounded-bl-[16px] rounded-br-[16px] lg:gap-[8px] pt-[16px] px-[16px]  lg:p-[24px] bg-[#054993] mx-auto">
           <div className=" flex flex-col gap-[20px] xl:gap-[16px] h-[610px]  xl:w-[1028px] ">
             <div>
               <p className="text-[#FFFFFF] text-[24px] lg:text-[48px] font-medium">
@@ -141,10 +143,10 @@ const About = () => {
                 cleaner, and avoid the all-too-familiar stress that comes with
                 relocation. And while every move is different, our promise
                 remains the same: to treat each project like it’s our own home,
-                and to leave every space better than we found it
+                and to leave every space better than we found it.
               </p>
             </div>
-            <div className="w-full grid grid-cols-2 gap-[28px] lg:flex lg:flex-row lg:justify-between lg:gap-[16px] text-white">
+            {/**   <div className="w-full grid grid-cols-2 gap-[28px] lg:flex lg:flex-row lg:justify-between lg:gap-[16px] text-white">
               <div className="border-l border-white px-[15px] flex flex-col gap-[8px] w-[150px]  lg:w-[227px]">
                 <p className="text-[24px] lg:text-[40px]">2k+</p>
                 <p className="xl:text-[14px] text-[12px]">Satisfied Clients</p>
@@ -163,7 +165,7 @@ const About = () => {
                 <p className="text-[24px] lg:text-[40px]">7k+</p>
                 <p className="xl:text-[14px] text-[12px]">Add-ons</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

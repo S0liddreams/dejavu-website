@@ -43,7 +43,7 @@ export default function ProjectComponent({ project }) {
                 />
               </div>
 
-              <div className="w-full z-50  flex flex-wrap justify-center lg:justify-between gap-x-[24px] gap-y-[24px] lg:flex-nowrap lg:gap-[48px] lg:h-[53px]">
+              <div className="w-full z-50  flex flex-wrap justify-center lg:justify-between gap-x-[24px] gap-y-[15px] lg:flex-nowrap lg:gap-[48px] lg:h-[53px]">
                 <div className="w-[45%] flex flex-col gap-[8px] items-center text-center lg:w-auto">
                   <p className="text-[#0550A1] font-medium text-[14px] lg:text-[16px]">
                     Service Type
@@ -62,7 +62,7 @@ export default function ProjectComponent({ project }) {
                   </p>
                 </div>
 
-                <div className="w-[45%] flex flex-col gap-[8px] items-center text-center lg:w-auto">
+                <div className="w-[45%] flex flex-col gap-[4px] lg:gap-[8px] items-center text-center lg:w-auto">
                   <p className="text-[#0550A1] font-medium text-[14px] lg:text-[16px]">
                     Duration
                   </p>
@@ -71,7 +71,7 @@ export default function ProjectComponent({ project }) {
                   </p>
                 </div>
 
-                <div className="w-[45%] flex flex-col gap-[8px] items-center text-center lg:w-auto">
+                <div className="w-[45%] flex flex-col gap-[4px] lg:gap-[8px] items-center text-center lg:w-auto">
                   <p className="text-[#0550A1] font-medium text-[14px] lg:text-[16px]">
                     Location
                   </p>
