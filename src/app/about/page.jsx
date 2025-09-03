@@ -61,7 +61,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="lg:h-[272px] lg:py-[64px] lg:px-[72px] py-[40px] px-[20px] ">
+      {/**Our Mission */}
+
+      <div className="lg:h-[320px] lg:py-[68px] lg:px-[72px] py-[40px] px-[20px] ">
         <div className="xl:w-[1296px] xl:h-[144px] grid lg:flex lg:flex-row  gap-[16px] mx-auto lg:gap-[48px]">
           <div className="xl:w-3/5 lg:w-1/3">
             <p className="text-[#171717] font-medium xl:text-[48px] lg:text-[34px] text-[24px]  ">
@@ -69,7 +71,7 @@ const About = () => {
             </p>
           </div>
           <div className="xl:w-4/5 lg:w-2/3">
-            <p className="text-[16px]  xl:w-[655px]  leading-[150%]  lg:text-left text-[#525252]">
+            <p className="text-[16px] lg:text-[18px]  xl:w-[655px]  leading-[150%]  lg:text-left text-[#525252]">
               We’re on a mission to redefine the moving experience by turning
               one of life’s most stressful moments into a seamless, supportive,
               and even enjoyable transition. We are committed to providing
